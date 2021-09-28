@@ -1,18 +1,27 @@
-/* Error: Expected expression.
- *   ,
- * 3 |   font-size: 
- *   |              ^
- *   '
- *   resources\scss\_base.scss 3:14  @import
- *   resources\scss\style.scss 2:9   root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Expected expression.\a   \2577 \a 3 \2502    font-size: \d\a   \2502               ^\a   \2575 \a   resources\\scss\\_base.scss 3:14  @import\a   resources\\scss\\style.scss 2:9   root stylesheet";
+/* ========= Variables ========== */
+html {
+  font-size: 16px;
+  font: "Lato", Helvetica, sans-serif;
+  color: #0B232E;
+  font-weight: 300;
 }
+
+h1 {
+  font-size: 2rem;
+  font-family: "Arvo", serif;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 2.25rem;
+  font-family: "Arvo", serif;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-family: "Lato", Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=style.css.map */

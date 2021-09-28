@@ -2,24 +2,94 @@ body {
   padding: 1.5rem;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  nav {
-    font-size: 1.125rem;
-    ul {
-      list-style-type: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 1.5rem;
-      li.highlight {
-        background-color: $darkTeal;
-        color: $offWhite;
-        font-family: $body;
-        padding: 0.75rem 1rem;
-        border-radius: 100px;
+main {
+  margin: 1.5rem 2rem;
+}
+
+section {
+  padding: 2rem 0;
+}
+
+/* ======== Site Navigation ======== */ 
+
+// Mobile
+// TODO: Add hamburger menu with script and animation
+
+
+// Desktop
+
+@media screen and (min-width: $laptop) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+    nav {
+      font-size: 1.125rem;
+      ul {
+        list-style-type: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 1.5rem;
+        li {
+          a {
+            color: $darkTeal;
+            text-decoration: none;
+          }
+        }
+        button {
+          background-color: $darkTeal;
+          color: $offWhite;
+          font-family: $body;
+          font-size: 1.125rem;
+          text-transform: uppercase;
+          padding: 0.75rem 1rem;
+          border-radius: 100px;
+          cursor: pointer;
+          &:hover {
+            background-color: $lightTeal;
+            color: $navy;
+          }
+          a {
+            color: $offWhite;
+            &:hover {
+              color: $navy;
+            }
+          }
+        }
       }
     }
   }
 }
+
+/* ======== About Section ======== */
+
+#about {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media screen and (min-width: $laptop) {
+  #about {
+  flex-direction: row;
+  }
+}
+
+.bio-photo {
+  //border-radius: 100px;
+  width: 40%;
+  background-image: url('resources/images/Profile2021Optimized.jpg');
+  background-size: cover;
+  /*
+  img {
+    width: 300px;
+    object-fit: fill;
+    border-radius: 999px;
+  }
+  */
+}
+
+/* ======== Portfolio Section ======== */
+
+/* ======== Contact Section ======== */

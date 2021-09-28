@@ -36,26 +36,82 @@ body {
   padding: 1.5rem;
 }
 
-header {
+main {
+  margin: 1.5rem 2rem;
+}
+
+section {
+  padding: 2rem 0;
+}
+
+/* ======== Site Navigation ======== */
+@media screen and (min-width: 1024px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+  }
+  header nav {
+    font-size: 1.125rem;
+  }
+  header nav ul {
+    list-style-type: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  header nav ul li a {
+    color: #0B7C74;
+    text-decoration: none;
+  }
+  header nav ul button {
+    background-color: #0B7C74;
+    color: #FBFCF5;
+    font-family: "Lato", Helvetica, sans-serif;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    padding: 0.75rem 1rem;
+    border-radius: 100px;
+    cursor: pointer;
+  }
+  header nav ul button:hover {
+    background-color: #23CABE;
+    color: #0B232E;
+  }
+  header nav ul button a {
+    color: #FBFCF5;
+  }
+  header nav ul button a:hover {
+    color: #0B232E;
+  }
+}
+/* ======== About Section ======== */
+#about {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
 }
-header nav {
-  font-size: 1.125rem;
+
+@media screen and (min-width: 1024px) {
+  #about {
+    flex-direction: row;
+  }
 }
-header nav ul {
-  list-style-type: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 1.5rem;
+.bio-photo {
+  width: 40%;
+  background-image: url("resources/images/Profile2021Optimized.jpg");
+  background-size: cover;
+  /*
+  img {
+    width: 300px;
+    object-fit: fill;
+    border-radius: 999px;
+  }
+  */
 }
-header nav ul li.highlight {
-  background-color: #0B7C74;
-  color: #FBFCF5;
-  font-family: "Lato", Helvetica, sans-serif;
-  padding: 0.75rem 1rem;
-  border-radius: 100px;
-}
+
+/* ======== Portfolio Section ======== */
+/* ======== Contact Section ======== */
 
 /*# sourceMappingURL=style.css.map */

@@ -100,15 +100,13 @@ section {
 }
 .bio-photo {
   width: 40%;
-  background-image: url("resources/images/Profile2021Optimized.jpg");
-  background-size: cover;
-  /*
-  img {
-    width: 300px;
-    object-fit: fill;
-    border-radius: 999px;
-  }
-  */
+}
+.bio-photo img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 999px;
 }
 
 /* ======== Portfolio Section ======== */

@@ -14,7 +14,13 @@ section {
 
 // Mobile
 // TODO: Add hamburger menu with script and animation
-
+header {
+  display: flex;
+  justify-content: center;
+  nav {
+    display: none;
+  }
+}
 
 // Desktop
 

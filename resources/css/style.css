@@ -106,6 +106,8 @@ header nav {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  align-items: center;
+  justify-content: center;
 }
 
 @media screen and (min-width: 1024px) {
@@ -113,15 +115,20 @@ header nav {
     flex-direction: row;
   }
 }
-.bio-photo {
-  width: 40%;
-}
 .bio-photo img {
   width: 250px;
   height: 250px;
   object-fit: cover;
   object-position: top;
   border-radius: 999px;
+  margin: 0 auto;
+}
+
+.blurb {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ======== Portfolio Section ======== */

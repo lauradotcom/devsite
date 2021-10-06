@@ -128,15 +128,26 @@ header {
   grid-template-rows: 4(1fr);
   article {
     background-color: $darkTeal;
-    ul.technologies {
+    p {
+      font-weight: 500;
+      margin: 1.5rem 0;
+    }
+    ul {
       list-style-type: none;
-      li {
-
-      }
+      display: flex;
+      gap: 1rem;
+    }
+    ul.technologies {
+      font-weight: 400;
+      margin: 1rem 0;
     }
     ul.icons {
+      margin: 1rem 0;
       li:hover {
         color: $lightTeal;
+      }
+      span {
+        font-size: 1.5rem;
       }
     }
   }

@@ -148,11 +148,27 @@ header nav ul {
 #portfolio article {
   background-color: #0B7C74;
 }
-#portfolio article ul.technologies {
+#portfolio article p {
+  font-weight: 500;
+  margin: 1.5rem 0;
+}
+#portfolio article ul {
   list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+#portfolio article ul.technologies {
+  font-weight: 400;
+  margin: 1rem 0;
+}
+#portfolio article ul.icons {
+  margin: 1rem 0;
 }
 #portfolio article ul.icons li:hover {
   color: #23CABE;
+}
+#portfolio article ul.icons span {
+  font-size: 1.5rem;
 }
 
 /* ======== Contact Section ======== */

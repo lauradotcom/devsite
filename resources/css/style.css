@@ -33,18 +33,19 @@ p {
   line-height: 1.25rem;
 }
 
-body {
-  padding: 1.5rem;
-}
+@media screen and (min-width: 1024px) {
+  body {
+    padding: 1.5rem;
+  }
 
-main {
-  margin: 1.5rem 2rem;
-}
+  main {
+    margin: 1.5rem 2rem;
+  }
 
-section {
-  padding: 2rem 0;
+  section {
+    padding: 2rem 0;
+  }
 }
-
 /* ======== Site Navigation ======== */
 header {
   display: flex;

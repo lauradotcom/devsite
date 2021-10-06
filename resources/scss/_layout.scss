@@ -1,13 +1,16 @@
-body {
-  padding: 1.5rem;
-}
 
-main {
-  margin: 1.5rem 2rem;
-}
+@media screen and (min-width: $laptop) {
+  body {
+    padding: 1.5rem;
+  }
 
-section {
-  padding: 2rem 0;
+  main {
+    margin: 1.5rem 2rem;
+  }
+
+  section {
+    padding: 2rem 0;
+  }
 }
 
 /* ======== Site Navigation ======== */ 

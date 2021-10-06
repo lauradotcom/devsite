@@ -145,9 +145,6 @@ header nav ul {
   grid-template-columns: auto;
   grid-template-rows: 4 1fr;
 }
-#portfolio article {
-  background-color: #0B7C74;
-}
 #portfolio article p {
   font-weight: 500;
   margin: 1.5rem 0;
@@ -169,6 +166,16 @@ header nav ul {
 }
 #portfolio article ul.icons span {
   font-size: 1.5rem;
+}
+#portfolio article:nth-child(even) {
+  background-color: #0B7C74;
+  color: #FBFCF5;
+}
+#portfolio article:nth-child(odd) {
+  background-color: #F0CA68;
+}
+#portfolio article:nth-child(odd) ul.icons li:hover {
+  color: #0B7C74;
 }
 
 /* ======== Contact Section ======== */

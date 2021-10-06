@@ -127,7 +127,6 @@ header {
   grid-template-columns: auto;
   grid-template-rows: 4(1fr);
   article {
-    background-color: $darkTeal;
     p {
       font-weight: 500;
       margin: 1.5rem 0;
@@ -148,6 +147,18 @@ header {
       }
       span {
         font-size: 1.5rem;
+      }
+    }
+    &:nth-child(even) {
+      background-color: $darkTeal;
+      color: $offWhite;
+    }
+    &:nth-child(odd) {
+      background-color: $yellowOrange;
+      ul.icons {
+        li:hover {
+          color: $darkTeal;
+        }
       }
     }
   }

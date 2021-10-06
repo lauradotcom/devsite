@@ -18,7 +18,9 @@ header {
   display: flex;
   justify-content: center;
   nav {
-    display: none;
+    ul {
+      display: none;
+    }
   }
 }
 
@@ -37,10 +39,12 @@ header {
         display: inline-flex;
         align-items: center;
         gap: 1.5rem;
+        text-transform: uppercase;
         li {
+            font-family: $headings;
           a {
-            color: $darkTeal;
             text-decoration: none;
+            color: $darkTeal;
           }
         }
         button {
@@ -48,7 +52,6 @@ header {
           color: $offWhite;
           font-family: $body;
           font-size: 1.125rem;
-          text-transform: uppercase;
           padding: 0.75rem 1rem;
           border-radius: 100px;
           cursor: pointer;
@@ -111,6 +114,17 @@ header {
   grid-template-rows: 4(1fr);
   article {
     background-color: $darkTeal;
+    ul.technologies {
+      list-style-type: none;
+      li {
+
+      }
+    }
+    ul.icons {
+      li:hover {
+        color: $lightTeal;
+      }
+    }
   }
   }
 

@@ -1,4 +1,15 @@
+/* ======== Global Formatting ======== */
 
+// Mobile
+body {
+  padding: 1.5rem 0;
+}
+
+section {
+  padding: 2rem 0;
+}
+
+// Desktop
 @media screen and (min-width: $laptop) {
   body {
     padding: 1.5rem;

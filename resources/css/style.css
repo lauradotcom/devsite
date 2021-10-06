@@ -29,8 +29,18 @@ h3 {
   margin-bottom: 0.5rem;
 }
 
-p {
+article {
   line-height: 1.25rem;
+  padding: 1.25rem;
+}
+
+/* ======== Global Formatting ======== */
+body {
+  padding: 1.5rem 0;
+}
+
+section {
+  padding: 2rem 0;
 }
 
 @media screen and (min-width: 1024px) {

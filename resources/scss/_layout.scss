@@ -105,4 +105,13 @@ header {
 
 /* ======== Portfolio Section ======== */
 
+#portfolio {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 4(1fr);
+  article {
+    background-color: $darkTeal;
+  }
+  }
+
 /* ======== Contact Section ======== */

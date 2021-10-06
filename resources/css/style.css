@@ -132,6 +132,15 @@ header nav {
 }
 
 /* ======== Portfolio Section ======== */
+#portfolio {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 4 1fr;
+}
+#portfolio article {
+  background-color: #0B7C74;
+}
+
 /* ======== Contact Section ======== */
 
 /*# sourceMappingURL=style.css.map */

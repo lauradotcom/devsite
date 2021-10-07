@@ -182,14 +182,21 @@ header nav ul {
 }
 
 #spacestagram {
-  background: linear-gradient(rgba(11, 124, 116, 0.8), rgba(11, 124, 116, 0.8)), url("../../resources/images/SpacestagramMobile.jpg");
+  background: linear-gradient(rgba(11, 124, 116, 0.9), rgba(11, 124, 116, 0.9)), url("../../resources/images/SpacestagramMobile.jpg");
   background-size: cover;
   background-position: center;
 }
 
 #songcrush {
-  background-image: linear-gradient(rgba(240, 202, 104, 0.8), rgba(240, 202, 104, 0.8)), url("../../resources/images/SongCrushDesktop.png");
-  background-size: contain;
+  background-image: linear-gradient(rgba(240, 202, 104, 0.9), rgba(240, 202, 104, 0.9)), url("../../resources/images/SongCrushMobile.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#prssa {
+  background-image: linear-gradient(rgba(11, 124, 116, 0.9), rgba(11, 124, 116, 0.9)), url("../../resources/images/PRSSA-Mobile.jpg");
+  background-size: cover;
+  background-position: top;
 }
 
 /* ======== Contact Section ======== */

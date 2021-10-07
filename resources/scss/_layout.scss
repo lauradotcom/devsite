@@ -178,8 +178,15 @@ header {
 }
 
 #songcrush {
-  background-image: linear-gradient($yellowOrangeOverlay, $yellowOrangeOverlay), url('../../resources/images/SongCrushDesktop.png');
-  background-size: contain;
+  background-image: linear-gradient($yellowOrangeOverlay, $yellowOrangeOverlay), url('../../resources/images/SongCrushMobile.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#prssa {
+  background-image: linear-gradient($darkTealOverlay, $darkTealOverlay), url('../../resources/images/PRSSA-Mobile.jpg');
+  background-size: cover;
+  background-position: top;
 }
 
 /* ======== Contact Section ======== */

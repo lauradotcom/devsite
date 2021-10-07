@@ -145,6 +145,9 @@ header nav ul {
   grid-template-columns: auto;
   grid-template-rows: 4 1fr;
 }
+#portfolio article {
+  height: 50vh;
+}
 #portfolio article p {
   font-weight: 500;
   margin: 1.5rem 0;
@@ -176,6 +179,17 @@ header nav ul {
 }
 #portfolio article:nth-child(odd) ul.icons li:hover {
   color: #0B7C74;
+}
+
+#spacestagram {
+  background: linear-gradient(rgba(11, 124, 116, 0.8), rgba(11, 124, 116, 0.8)), url("../../resources/images/SpacestagramMobile.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#songcrush {
+  background-image: linear-gradient(rgba(240, 202, 104, 0.8), rgba(240, 202, 104, 0.8)), url("../../resources/images/SongCrushDesktop.png");
+  background-size: contain;
 }
 
 /* ======== Contact Section ======== */

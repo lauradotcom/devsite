@@ -127,6 +127,7 @@ header {
   grid-template-columns: auto;
   grid-template-rows: 4(1fr);
   article {
+    height: 50vh;
     p {
       font-weight: 500;
       margin: 1.5rem 0;
@@ -162,6 +163,19 @@ header {
       }
     }
   }
-  }
+}
+
+// Background images for porfolio items
+
+#spacestagram {
+  background: linear-gradient($darkTealOverlay, $darkTealOverlay), url('../../resources/images/SpacestagramMobile.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#songcrush {
+  background-image: linear-gradient($yellowOrangeOverlay, $yellowOrangeOverlay), url('../../resources/images/SongCrushDesktop.png');
+  background-size: contain;
+}
 
 /* ======== Contact Section ======== */

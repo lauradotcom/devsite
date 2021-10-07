@@ -128,6 +128,9 @@ header {
   grid-template-rows: 4(1fr);
   article {
     height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     p {
       font-weight: 500;
       margin: 1.5rem 0;
@@ -139,10 +142,11 @@ header {
     }
     ul.technologies {
       font-weight: 400;
-      margin: 1rem 0;
+      //margin: 1rem 0;
+      justify-self: flex-end;
     }
     ul.icons {
-      margin: 1rem 0;
+      //margin: 1rem 0;
       li:hover {
         color: $lightTeal;
       }

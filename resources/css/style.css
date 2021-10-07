@@ -147,6 +147,9 @@ header nav ul {
 }
 #portfolio article {
   height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 #portfolio article p {
   font-weight: 500;
@@ -159,10 +162,7 @@ header nav ul {
 }
 #portfolio article ul.technologies {
   font-weight: 400;
-  margin: 1rem 0;
-}
-#portfolio article ul.icons {
-  margin: 1rem 0;
+  justify-self: flex-end;
 }
 #portfolio article ul.icons li:hover {
   color: #23CABE;

@@ -40,7 +40,7 @@ article {
   }
 
   h2 {
-    font-size: 2.25rem;
+    font-size: 1.75rem;
     margin-bottom: 1.085rem;
   }
 }
@@ -191,6 +191,19 @@ header nav ul {
   color: #0B7C74;
 }
 
+@media screen and (min-width: 1024px) {
+  #portfolio article div {
+    background-color: #0B232E;
+    padding: 1rem;
+    width: 50%;
+  }
+  #portfolio article:nth-child(even) {
+    background-color: #0B7C74;
+  }
+  #portfolio article:nth-child(odd) {
+    color: #FBFCF5;
+  }
+}
 #spacestagram {
   background: linear-gradient(rgba(11, 124, 116, 0.9), rgba(11, 124, 116, 0.9)), url("../../resources/images/SpacestagramMobile.jpg");
   background-size: cover;

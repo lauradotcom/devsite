@@ -122,6 +122,8 @@ header {
 
 /* ======== Portfolio Section ======== */
 
+// Mobile
+
 #portfolio {
   display: grid;
   grid-template-columns: auto;
@@ -164,6 +166,26 @@ header {
         li:hover {
           color: $darkTeal;
         }
+      }
+    }
+  }
+}
+
+// Desktop
+
+@media screen and (min-width: $laptop) {
+  #portfolio {
+    article {
+      div {
+        background-color: $navy;
+        padding: 1rem;
+        width: 50%;
+      }
+      &:nth-child(even) {
+        background-color: $darkTeal;
+      }
+      &:nth-child(odd) {
+        color: $offWhite;
       }
     }
   }

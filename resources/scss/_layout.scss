@@ -2,7 +2,7 @@
 
 // Mobile
 body {
-  padding: 1.5rem 0;
+  padding: 0;
 }
 
 section {
@@ -11,9 +11,6 @@ section {
 
 // Desktop
 @media screen and (min-width: $laptop) {
-  body {
-    padding: 1.5rem;
-  }
 
   main {
     margin: 1.5rem 2rem;
@@ -31,6 +28,7 @@ section {
 header {
   display: flex;
   justify-content: center;
+  padding: 1.5rem;
   nav {
     ul {
       display: none;
@@ -256,4 +254,30 @@ header {
 
 #contact {
   padding: 2rem;
+}
+
+/* ======== Footer ======== */ 
+
+// Mobile
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: $navy;
+  color: $offWhite;
+  padding: 1.5rem;
+  ul {
+    list-style-type: none;
+    display: inline-flex;
+    gap: 2rem;
+    span {
+      font-size: 1.25rem;
+    }
+  }
+  p {
+    font-size: 0.75rem;
+  }
 }

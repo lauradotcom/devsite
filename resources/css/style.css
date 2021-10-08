@@ -97,7 +97,7 @@ form label {
 }
 /* ======== Global Formatting ======== */
 body {
-  padding: 1.5rem 0;
+  padding: 0;
 }
 
 section {
@@ -105,10 +105,6 @@ section {
 }
 
 @media screen and (min-width: 1024px) {
-  body {
-    padding: 1.5rem;
-  }
-
   main {
     margin: 1.5rem 2rem;
   }
@@ -121,6 +117,7 @@ section {
 header {
   display: flex;
   justify-content: center;
+  padding: 1.5rem;
 }
 header nav ul {
   display: none;
@@ -308,6 +305,29 @@ header nav ul {
 /* ======== Contact Section ======== */
 #contact {
   padding: 2rem;
+}
+
+/* ======== Footer ======== */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: #0B232E;
+  color: #FBFCF5;
+  padding: 1.5rem;
+}
+footer ul {
+  list-style-type: none;
+  display: inline-flex;
+  gap: 2rem;
+}
+footer ul span {
+  font-size: 1.25rem;
+}
+footer p {
+  font-size: 0.75rem;
 }
 
 /*# sourceMappingURL=style.css.map */

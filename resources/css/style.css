@@ -45,7 +45,50 @@ article {
     margin-bottom: 1.085rem;
   }
 }
+/* ======== Buttons ======== */
+button, input[type=submit] {
+  background-color: #0B7C74;
+  color: #FBFCF5;
+  font-family: "Lato", Helvetica, sans-serif;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  padding: 0.75rem 1rem;
+  border-radius: 100px;
+  cursor: pointer;
+}
+button:hover, input[type=submit]:hover {
+  background-color: #23CABE;
+  color: #0B232E;
+}
+button a, input[type=submit] a {
+  color: #FBFCF5;
+}
+button a:hover, input[type=submit] a:hover {
+  color: #0B232E;
+}
+
 /* ======== Forms ======== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+form input[type=text], form input[type=email], form textarea {
+  border: 1px solid #0B232E;
+  background-color: #FBFCF5;
+  color: #0B232E;
+  margin-bottom: 1rem;
+}
+form input[type=text], form input[type=email] {
+  height: 1.5rem;
+}
+form textarea {
+  min-height: 20vh;
+}
+form label {
+  font-weight: 400;
+}
+
 /* ======== Global Formatting ======== */
 body {
   padding: 1.5rem 0;
@@ -100,25 +143,6 @@ header nav ul {
   header nav ul li a {
     text-decoration: none;
     color: #0B7C74;
-  }
-  header nav ul button {
-    background-color: #0B7C74;
-    color: #FBFCF5;
-    font-family: "Lato", Helvetica, sans-serif;
-    font-size: 1.125rem;
-    padding: 0.75rem 1rem;
-    border-radius: 100px;
-    cursor: pointer;
-  }
-  header nav ul button:hover {
-    background-color: #23CABE;
-    color: #0B232E;
-  }
-  header nav ul button a {
-    color: #FBFCF5;
-  }
-  header nav ul button a:hover {
-    color: #0B232E;
   }
 }
 /* ======== About Section ======== */
@@ -276,5 +300,8 @@ header nav ul {
   }
 }
 /* ======== Contact Section ======== */
+#contact {
+  padding: 2rem;
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -228,7 +228,9 @@ header {
   }
 }
 
-// Background images for porfolio items
+/* ======== Background images for porfolio items ======== */
+
+// Mobile 
 
 #spacestagram {
   background: linear-gradient($darkTealOverlay, $darkTealOverlay), url('../../resources/images/SpacestagramMobile.jpg');
@@ -246,6 +248,25 @@ header {
   background-image: linear-gradient($darkTealOverlay, $darkTealOverlay), url('../../resources/images/PRSSA-Mobile.jpg');
   background-size: cover;
   background-position: top;
+}
+
+// Desktop
+
+@media screen and (min-width: $laptop) {
+  #spacestagram {
+    background: linear-gradient($darkTealOverlay, $darkTealOverlay), url('../../resources/images/SpacestagramDesktopDM.png');
+    background-position: center;
+  }
+
+  #songcrush {
+    background: linear-gradient($lightTealOverlay, $lightTealOverlay), url('../../resources/images/SongCrushDesktop.png');
+    background-size: cover;
+  }
+
+  #prssa {
+    background: linear-gradient($darkTealOverlay, $darkTealOverlay), url('../../resources/images/PRSSA-Desktop.png');
+    background-size: cover;
+  }
 }
 
 /* ======== Contact Section ======== */

@@ -234,6 +234,7 @@ header nav ul {
     left: 85%;
   }
 }
+/* ======== Background images for porfolio items ======== */
 #spacestagram {
   background: linear-gradient(rgba(11, 124, 116, 0.9), rgba(11, 124, 116, 0.9)), url("../../resources/images/SpacestagramMobile.jpg");
   background-size: cover;
@@ -252,6 +253,22 @@ header nav ul {
   background-position: top;
 }
 
+@media screen and (min-width: 1024px) {
+  #spacestagram {
+    background: linear-gradient(rgba(11, 124, 116, 0.9), rgba(11, 124, 116, 0.9)), url("../../resources/images/SpacestagramDesktopDM.png");
+    background-position: center;
+  }
+
+  #songcrush {
+    background: linear-gradient(rgba(35, 202, 190, 0.8), rgba(35, 202, 190, 0.8)), url("../../resources/images/SongCrushDesktop.png");
+    background-size: cover;
+  }
+
+  #prssa {
+    background: linear-gradient(rgba(11, 124, 116, 0.9), rgba(11, 124, 116, 0.9)), url("../../resources/images/PRSSA-Desktop.png");
+    background-size: cover;
+  }
+}
 /* ======== Contact Section ======== */
 
 /*# sourceMappingURL=style.css.map */

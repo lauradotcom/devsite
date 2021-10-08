@@ -89,6 +89,12 @@ form label {
   font-weight: 400;
 }
 
+@media screen and (min-width: 1024px) {
+  form {
+    justify-content: center;
+    margin: 0 30%;
+  }
+}
 /* ======== Global Formatting ======== */
 body {
   padding: 1.5rem 0;

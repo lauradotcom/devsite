@@ -45,3 +45,12 @@ form {
     font-weight: 400;
   }
 }
+
+// Desktop
+
+@media screen and (min-width: $laptop) {
+  form {
+    justify-content: center;
+    margin: 0 30%;
+  }
+}

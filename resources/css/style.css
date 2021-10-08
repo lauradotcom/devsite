@@ -26,6 +26,7 @@ h3 {
   font-size: 1.25rem;
   font-family: "Lato", Helvetica, sans-serif;
   font-weight: 700;
+  margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
@@ -172,7 +173,11 @@ header nav ul {
 }
 #portfolio article ul.technologies {
   font-weight: 400;
+  margin: 1rem 0;
   justify-self: flex-end;
+}
+#portfolio article ul.icons {
+  margin: 1rem 0;
 }
 #portfolio article ul.icons li:hover {
   color: #23CABE;

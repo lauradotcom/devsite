@@ -20,7 +20,7 @@
         <ul>
           <li><a href="#portfolio">Projects</a></li>
           <li><a href="#">Resume</a></li>
-          <li><button class="action" href="#contact">Contact</button></li>
+          <li><a class="action" href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -31,7 +31,7 @@
         </div>
         <article class="blurb">
           <h2>Hi, I'm Laura.</h2>
-          <p>Here’s some stuff you probably wanna know about me. Pretty neat, huh? I do cool things, sometimes. Like build apps and bake pastries and play video games for perhaps too many hours at a time...  I’m nerdy whether I’m working or not and for some reason I assume you must care about that so I’m saying it, but maybe you don’t! Anyway, thanks for visiting my Web page!!!!</p>
+          <p>I’m a web developer, designer, writer, and editor. My marketing background informs my creative, empathetic approach to building websites, allowing me to strategize around my clients’ business goals while considering their customers’ needs with every decision.</p>
         </article>
       </section>
       <section id="portfolio">
@@ -39,7 +39,7 @@
         <article id="spacestagram">
           <div>
             <h3>Spacestagram</h3>
-            <p>This was a super cool project, an Instagram clone that populates a feed with five random images from NASA’s Photo of the Day API. It features a functioning, animated “like” button and familiar date formatting for Instagram users.</p>
+            <p>This Instagram clone populates a feed with five random images from NASA’s Photo of the Day API. It features a functioning, animated “like” button and familiar date formatting for Instagram users.</p>
             <ul class="technologies">
               <li>React</li>
               <li>HTML</li>
@@ -47,37 +47,36 @@
             </ul>
             <ul class="icons">
               <li><a target="_blank" href="https://hellospacestagram.netlify.app"><span title="View Live Project" class="fas fa-external-link-alt"></span></a></li>
-              <li><span title="View on Github" class="fab fa-github"></span></li>
+              <li><a target="_blank" href="https://github.com/lauradotcom/spacestagram"><span title="View on GitHub" class="fab fa-github"></span></a></li>
             </ul>
           </div>
         </article>
         <article id="songcrush">
             <div>
             <h3>SongCrush</h3>
-            <p>This was a super cool project, an Instagram clone that populates a feed with five random images from NASA’s Photo of the Day API. It features a functioning, animated “like” button and familiar date formatting for Instagram users.</p>
+            <p>Using Spotify login authorization, this single-page app allows users to create and save playlists to a Spotify account.</p>
             <ul class="technologies">
               <li>React</li>
               <li>HTML</li>
               <li>CSS</li>
             </ul>
             <ul class="icons">
-              <li><span title="View Live Project" class="fas fa-external-link-alt"></span></li>
-              <li><span title="View on Github" class="fab fa-github"></span></li>
+              <li><a target="_blank" href="https://lauradotcom.github.io/songcrush"><span title="View Live Project" class="fas fa-external-link-alt"></span></a></li>
+              <li><a target="_blank" href="https://github.com/lauradotcom/songcrush"><span title="View on GitHub" class="fab fa-github"></span></a></li>
             </ul>
           </div>
         </article>
         <article id="prssa">
           <div>
             <h3>PRSSA</h3>
-            <p>This was a super cool project, an Instagram clone that populates a feed with five random images from NASA’s Photo of the Day API. It features a functioning, animated “like” button and familiar date formatting for Instagram users.</p>
+            <p>I migrated this website from WordPress to Sitefinity, implementing provided CSS classes and JavaScript widgets and creating new CSS styles as needed.</p>
             <ul class="technologies">
-              <li>React</li>
               <li>HTML</li>
               <li>CSS</li>
             </ul>
             <ul class="icons">
-              <li><span title="View Live Project" class="fas fa-external-link-alt"></span></li>
-              <li><span title="View on Github" class="fab fa-github"></span></li>
+              <li><a target="_blank" href="https://www.prsa.org/prssa/"><span title="View Live Project" class="fas fa-external-link-alt"></span></a></li>
+              <!--li><span title="View on GitHub" class="fab fa-github"></span></li-->
             </ul>
           </div>
         </article>
@@ -87,20 +86,20 @@
           <h2>Get In Touch</h2>
           <p>Have a question? Interested in working together? Let's chat!</p>
         </article>
-        <form>
+        <form action="mailto:lrhwkns@gmail.com" method="POST" enctype="multipart/form-data" name="EmailForm">
           <label for="name">
             Name
           </label>
-          <input type="text" name="name" />
+          <input type="text" id="name" name="name" />
           <label for="email">
             Email
           </label>
-          <input type="email" name="email" />
+          <input type="email" id="email" name="email" />
           <label for="message">
             Message
           </label>
-          <textarea name="message"></textarea>
-          <input type="submit" value="Send" />
+          <textarea id="message" name="message"></textarea>
+          <button type="submit">Send</button>
         </form>
       </section>
     </main>

@@ -46,24 +46,25 @@ article {
   }
 }
 /* ======== Buttons ======== */
-button, input[type=submit] {
+button, input[type=submit], a.action {
   background-color: #0B7C74;
   color: #FBFCF5;
   font-family: "Lato", Helvetica, sans-serif;
   font-size: 1.125rem;
+  font-weight: 400;
   text-transform: uppercase;
   padding: 0.75rem 1rem;
   border-radius: 100px;
   cursor: pointer;
 }
-button:hover, input[type=submit]:hover {
+button:hover, input[type=submit]:hover, a.action:hover {
   background-color: #23CABE;
   color: #0B232E;
 }
-button a, input[type=submit] a {
+button a, input[type=submit] a, a.action a {
   color: #FBFCF5;
 }
-button a:hover, input[type=submit] a:hover {
+button a:hover, input[type=submit] a:hover, a.action a:hover {
   color: #0B232E;
 }
 

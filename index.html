@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/355045fd72.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
@@ -19,37 +20,96 @@
         <ul>
           <li><a href="#portfolio">Projects</a></li>
           <li><a href="#">Resume</a></li>
-          <li class="highlight"><button href="#contact">Contact</button></li>
+          <li><button class="action" href="#contact">Contact</button></li>
         </ul>
       </nav>
     </header>
     <main>
       <section id="about">
         <div class="bio-photo">
-          <!--img src="resources/images/Profile2021Optimized.jpg" alt="Laura Hawkins"/-->
+          <img src="resources/images/Profile2021Optimized.jpg" alt="Laura Hawkins"/>
         </div>
-        <div>
+        <article class="blurb">
           <h2>Hi, I'm Laura.</h2>
           <p>Here’s some stuff you probably wanna know about me. Pretty neat, huh? I do cool things, sometimes. Like build apps and bake pastries and play video games for perhaps too many hours at a time...  I’m nerdy whether I’m working or not and for some reason I assume you must care about that so I’m saying it, but maybe you don’t! Anyway, thanks for visiting my Web page!!!!</p>
-        </div>
+        </article>
       </section>
       <section id="portfolio">
         <h2>Portfolio</h2>
-        <article>
-          <h3>Spacestagram</h3>
+        <article id="spacestagram">
+          <div>
+            <h3>Spacestagram</h3>
+            <p>This was a super cool project, an Instagram clone that populates a feed with five random images from NASA’s Photo of the Day API. It features a functioning, animated “like” button and familiar date formatting for Instagram users.</p>
+            <ul class="technologies">
+              <li>React</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+            <ul class="icons">
+              <li><a target="_blank" href="https://hellospacestagram.netlify.app"><span title="View Live Project" class="fas fa-external-link-alt"></span></a></li>
+              <li><span title="View on Github" class="fab fa-github"></span></li>
+            </ul>
+          </div>
         </article>
-        <article>
-          <h3>SongCrush</h3>
+        <article id="songcrush">
+            <div>
+            <h3>SongCrush</h3>
+            <p>This was a super cool project, an Instagram clone that populates a feed with five random images from NASA’s Photo of the Day API. It features a functioning, animated “like” button and familiar date formatting for Instagram users.</p>
+            <ul class="technologies">
+              <li>React</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+            <ul class="icons">
+              <li><span title="View Live Project" class="fas fa-external-link-alt"></span></li>
+              <li><span title="View on Github" class="fab fa-github"></span></li>
+            </ul>
+          </div>
         </article>
-        <article>
-          <h3>PRSSA</h3>
+        <article id="prssa">
+          <div>
+            <h3>PRSSA</h3>
+            <p>This was a super cool project, an Instagram clone that populates a feed with five random images from NASA’s Photo of the Day API. It features a functioning, animated “like” button and familiar date formatting for Instagram users.</p>
+            <ul class="technologies">
+              <li>React</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+            <ul class="icons">
+              <li><span title="View Live Project" class="fas fa-external-link-alt"></span></li>
+              <li><span title="View on Github" class="fab fa-github"></span></li>
+            </ul>
+          </div>
         </article>
       </section>
       <section id="contact">
-        <h2>Get In Touch</h2>
+        <article class="blurb">
+          <h2>Get In Touch</h2>
+          <p>Have a question? Interested in working together? Let's chat!</p>
+        </article>
+        <form>
+          <label for="name">
+            Name
+          </label>
+          <input type="text" name="name" />
+          <label for="email">
+            Email
+          </label>
+          <input type="email" name="email" />
+          <label for="message">
+            Message
+          </label>
+          <textarea name="message"></textarea>
+          <input type="submit" value="Send" />
+        </form>
       </section>
     </main>
     <footer>
+      <ul class="icons">
+        <li><a href="https://linkedin.com/in/laura-g-hawkins"><span title="LinkedIn" class="fab fa-linkedin-in"></span></a></li>
+        <li><a href="https://github.com/lauradotcom"><span title="GitHub" class="fab fa-github"></span></a></li>
+      </ul>
+      <p>&copy; Laura Hawkins 2021</p>
     </footer>
   </body>
 </html>

@@ -1,0 +1,64 @@
+/* ======== Buttons ======== */
+
+button, input[type="submit"] {
+  background-color: $darkTeal;
+  color: $offWhite;
+  font-family: $body;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  padding: 0.75rem 1rem;
+  border-radius: 100px;
+  cursor: pointer;
+  &:hover {
+    background-color: $lightTeal;
+    color: $navy;
+  }
+  a {
+    color: $offWhite;
+    &:hover {
+      color: $navy;
+    }
+  }
+}
+
+/* ======== Forms ======== */
+
+// Mobile
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  input[type="text"], input[type="email"], textarea {
+    border: 1px solid $navy;
+    background-color: $offWhite;
+    color: $navy;
+    margin-bottom: 1rem;
+  }
+  input[type="text"], input[type="email"] {
+    height: 1.5rem;
+  }
+  textarea {
+    min-height: 20vh;
+  }
+  label {
+    font-weight: 400;
+  }
+}
+
+// Desktop
+
+@media screen and (min-width: $laptop) {
+  form {
+    justify-content: center;
+    margin: 0 30%;
+  }
+}
+
+/* ======== Icons ======= */
+.fab, .fas, .far {
+  color: $offWhite;
+  &:hover {
+    color: $lightTeal;
+  }
+}

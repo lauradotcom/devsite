@@ -1,20 +1,40 @@
-body {
-  padding: 1.5rem;
-}
+/* ======== Global Formatting ======== */
 
-main {
-  margin: 1.5rem 2rem;
+// Mobile
+body {
+  padding: 0;
 }
 
 section {
   padding: 2rem 0;
 }
 
+// Desktop
+@media screen and (min-width: $laptop) {
+
+  main {
+    margin: 1.5rem 2rem;
+  }
+
+  section {
+    padding: 2rem 0;
+  }
+}
+
 /* ======== Site Navigation ======== */ 
 
 // Mobile
 // TODO: Add hamburger menu with script and animation
-
+header {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
+  nav {
+    ul {
+      display: none;
+    }
+  }
+}
 
 // Desktop
 
@@ -31,30 +51,12 @@ section {
         display: inline-flex;
         align-items: center;
         gap: 1.5rem;
+        text-transform: uppercase;
         li {
+            font-family: $headings;
           a {
-            color: $darkTeal;
             text-decoration: none;
-          }
-        }
-        button {
-          background-color: $darkTeal;
-          color: $offWhite;
-          font-family: $body;
-          font-size: 1.125rem;
-          text-transform: uppercase;
-          padding: 0.75rem 1rem;
-          border-radius: 100px;
-          cursor: pointer;
-          &:hover {
-            background-color: $lightTeal;
-            color: $navy;
-          }
-          a {
-            color: $offWhite;
-            &:hover {
-              color: $navy;
-            }
+            color: $darkTeal;
           }
         }
       }
@@ -68,6 +70,8 @@ section {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  align-items: center;
+  justify-content: center;
 }
 
 @media screen and (min-width: $laptop) {
@@ -77,19 +81,200 @@ section {
 }
 
 .bio-photo {
-  //border-radius: 100px;
-  width: 40%;
-  background-image: url('resources/images/Profile2021Optimized.jpg');
-  background-size: cover;
-  /*
+  //width: 40%;
   img {
-    width: 300px;
-    object-fit: fill;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: top;
     border-radius: 999px;
+    margin: 0 auto;
   }
-  */
+}
+
+.blurb {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ======== Portfolio Section ======== */
 
+// Mobile
+
+#portfolio {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 4(1fr);
+  article {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    p {
+      font-weight: 500;
+      margin: 1.5rem 0;
+    }
+    ul {
+      list-style-type: none;
+      display: flex;
+      gap: 1rem;
+    }
+    ul.technologies {
+      font-weight: 400;
+      margin: 1rem 0;
+      justify-self: flex-end;
+    }
+    ul.icons {
+      margin: 1rem 0;
+      span {
+        font-size: 1.5rem;
+      }
+    }
+    &:nth-child(even) {
+      background-color: $darkTeal;
+      color: $offWhite;
+    }
+    &:nth-child(odd) {
+      background-color: $yellowOrange;
+      ul.icons {
+        li:hover {
+          color: $darkTeal;
+        }
+      }
+    }
+  }
+}
+
+// Laptop
+
+@media screen and (min-width: $laptop) {
+  #portfolio {
+    grid-template-columns: 2(1fr);
+    grid-row-gap: 5rem;
+    article {
+      width: 50%;
+      div {
+        background-color: $navy;
+        padding: 1rem;
+        width: 100%;
+        height: 75%;
+        position: relative;
+      }
+      &:nth-child(even) {
+        background-color: $darkTeal;
+        justify-self: flex-end;
+        div {
+          right: 85%;
+        }
+      }
+      &:nth-child(odd) {
+        background-color: $lightTeal;
+        color: $offWhite;
+        justify-self: flex-start;
+        div {
+          left: 85%;
+        }
+      }
+    }
+  }
+}
+
+// Desktop
+
+@media screen and (min-width: $desktop) {
+  #portfolio {
+    article {
+      div {
+        width: 60%;
+        height: 80%;
+      }
+      &:nth-child(even) {
+        div {
+          right: 45%;
+        }
+      }
+      &:nth-child(odd) {
+        div {
+          left: 85%;
+        }
+      }
+    }
+  }
+}
+
+/* ======== Background images for porfolio items ======== */
+
+// Mobile 
+
+#spacestagram {
+  background: linear-gradient($darkTealOverlay, $darkTealOverlay), url('../../resources/images/SpacestagramMobile.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#songcrush {
+  background-image: linear-gradient($yellowOrangeOverlay, $yellowOrangeOverlay), url('../../resources/images/SongCrushMobile.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#prssa {
+  background-image: linear-gradient($darkTealOverlay, $darkTealOverlay), url('../../resources/images/PRSSA-Mobile.jpg');
+  background-size: cover;
+  background-position: top;
+}
+
+// Desktop
+
+@media screen and (min-width: $laptop) {
+  #spacestagram {
+    background: linear-gradient($darkTealOverlay, $darkTealOverlay), url('../../resources/images/SpacestagramDesktopDM.png');
+    background-position: center;
+  }
+
+  #songcrush {
+    background: linear-gradient($lightTealOverlay, $lightTealOverlay), url('../../resources/images/SongCrushDesktop.png');
+    background-size: cover;
+  }
+
+  #prssa {
+    background: linear-gradient($darkTealOverlay, $darkTealOverlay), url('../../resources/images/PRSSA-Desktop.png');
+    background-size: cover;
+  }
+}
+
 /* ======== Contact Section ======== */
+
+// Mobile
+
+#contact {
+  padding: 2rem;
+}
+
+/* ======== Footer ======== */ 
+
+// Mobile
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: $navy;
+  color: $offWhite;
+  padding: 1.5rem;
+  ul {
+    list-style-type: none;
+    display: inline-flex;
+    gap: 2rem;
+    span {
+      font-size: 1.25rem;
+    }
+  }
+  p {
+    font-size: 0.75rem;
+  }
+}

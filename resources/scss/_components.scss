@@ -54,3 +54,11 @@ form {
     margin: 0 30%;
   }
 }
+
+/* ======== Icons ======= */
+.fab, .fas, .far {
+  color: $offWhite;
+  &:hover {
+    color: $lightTeal;
+  }
+}

@@ -95,6 +95,14 @@ form label {
     margin: 0 30%;
   }
 }
+/* ======== Icons ======= */
+.fab, .fas, .far {
+  color: #FBFCF5;
+}
+.fab:hover, .fas:hover, .far:hover {
+  color: #23CABE;
+}
+
 /* ======== Global Formatting ======== */
 body {
   padding: 0;
@@ -206,9 +214,6 @@ header nav ul {
 }
 #portfolio article ul.icons {
   margin: 1rem 0;
-}
-#portfolio article ul.icons li:hover {
-  color: #23CABE;
 }
 #portfolio article ul.icons span {
   font-size: 1.5rem;

@@ -86,19 +86,19 @@
           <h2>Get In Touch</h2>
           <p>Have a question? Interested in working together? Let's chat!</p>
         </article>
-        <form action="mailto:lrhwkns@gmail.com" method="POST" enctype="multipart/form-data" name="EmailForm">
+        <form action="#" id="contact-form" method="POST" enctype="multipart/form-data" name="EmailForm">
           <label for="name">
             Name
           </label>
-          <input type="text" id="name" name="name" />
+          <input type="text" id="name" name="name" required />
           <label for="email">
             Email
           </label>
-          <input type="email" id="email" name="email" />
+          <input type="email" id="email" name="email" required />
           <label for="message">
             Message
           </label>
-          <textarea id="message" name="message"></textarea>
+          <textarea id="message" name="message" required></textarea>
           <button type="submit">Send</button>
         </form>
       </section>

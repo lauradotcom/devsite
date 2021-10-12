@@ -1,22 +1,18 @@
 const express = require('express');
+const cors = require('cors');
 const nodemailer = require('nodemailer');
 const multiparty = require('multiparty');
-const SMTPConnection = require('nodemailer/lib/smtp-connection');
 require('dotenv').config();
-
-// Initialize Express app
-const app = express();
-
-// Define homepage for app
-app.route('/').get(function (req, res) {
-  res.sendFile(process.cwd() + 'index.html');
-});
 
 // Use port 5000 for testing
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-  console.log(`Server is listening on port ${PORT}...`);
-});
+
+// Initialize Express app
+const app = express();
+// CORS
+app.use(cors({ origin: '*' }));
+
+app.use('/', express.static(process.cwd() + '/')); //make homepage static
 
 // Set up Nodemailer transporter object
 const transporter = nodemailer.createTransport({
@@ -35,4 +31,46 @@ transporter.verify(function (error, success) {
   } else {
     console.log('Server is ready');
   }
+});
+
+// Create POST route to send the message
+app.post('/', (req, res) => {
+
+  // Accept form data and parse it with Multiparty
+  let form = new multiparty.Form();
+  let data = {};
+  form.parse(req, function (err, fields) {
+    console.log(fields);
+    Object.keys(fields).forEach(function (property) {
+      data[property] = fields[property].toString();
+    });
+
+    // Create a mail object with the needed properties (fields)
+    const mail = {
+      from: data.name,
+      to: process.env.EMAIL,
+      subject: `New message from ${data.name}`,
+      text: `Name: ${data.name} \nEmail: ${data.email} \nMessage: ${data.message}`,
+    };
+
+    // Send the email
+    transporter.sendMail(mail, (err, data)=> {
+      if (err) {
+        console.log(err);
+        res.status(500).send('Something went wrong.');
+      } else {
+        res.status(200).send('Email successfully sent!');
+      }
+    });
+  });
+});
+
+// Define homepage for app
+app.route('/').get(function (req, res) {
+  res.sendFile(process.cwd() + 'index.html');
+});
+
+// Express server listening...
+app.listen(PORT, () => {
+  console.log(`Server is listening on port ${PORT}...`);
 });

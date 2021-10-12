@@ -14,6 +14,7 @@ const app = express();
 app.use(cors({ origin: '*' }));
 app.use(express.json()); // accept JSON
 app.use(express.urlencoded({ extended: true })); // accept URL-encoded data
+
 app.use(express.static('public')); // make public directory static
 
 app.get('/', (req, res) => {
@@ -63,21 +64,14 @@ app.post('/', (req, res) => {
     transporter.sendMail(mail, (err, data) => {
       if (err) {
         console.log(err);
-        res.status(500).send('Something went wrong.');
+        res.status(500).send({ message: 'Oh no, something went wrong! Please try again in a minute.' });
         return;
       } else {
-        res.status(200).send('Email successfully sent!');
+        res.status(200).send({ message: 'Thanks for your message!' });
       }
     });
   });
 });
-
-/*
-// Define homepage for app
-app.route('/').get(function (req, res) {
-  res.sendFile(process.cwd() + '/public/index.html');
-});
-*/
 
 // Express server listening...
 app.listen(PORT, () => {

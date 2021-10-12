@@ -1,13 +1,13 @@
 // Client-side form handling
 
 const form = document.getElementById('contact-form');
+let statusMessage = document.getElementById('status-message').innerText;
 
 // Add event listener to the form
 const formEvent = form.addEventListener('submit', event => {
   event.preventDefault();
   let mail = new FormData(form);
   sendMail(mail);
-  console.log(mail);
 })
 
 // Create sendMail function to submit the form data
@@ -18,5 +18,6 @@ const sendMail = (mail) => {
   })
   .then((response) => {
     return response.json();
+    statusMessage = 'Thanks for your message!'
   })
 }

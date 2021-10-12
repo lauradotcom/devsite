@@ -89,6 +89,10 @@ form textarea {
 form label {
   font-weight: 400;
 }
+form div#status-message {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+}
 
 @media screen and (min-width: 1024px) {
   form {

@@ -17,5 +17,6 @@ const sendMail = (mail) => {
   })
   .then((response) => {
     return response.json();
+    console.log(response.json());
   })
 }

@@ -11,6 +11,8 @@ const PORT = process.env.PORT || 5000;
 const app = express();
 // CORS
 app.use(cors({ origin: '*' }));
+app.use(express.json()); // accept JSON
+app.use(express.urlencoded({ extended: true })); // accept URL-encoded data
 
 app.use('/', express.static(process.cwd() + '/')); //make homepage static
 
@@ -54,10 +56,11 @@ app.post('/', (req, res) => {
     };
 
     // Send the email
-    transporter.sendMail(mail, (err, data)=> {
+    transporter.sendMail(mail, (err, data) => {
       if (err) {
         console.log(err);
         res.status(500).send('Something went wrong.');
+        return;
       } else {
         res.status(200).send('Email successfully sent!');
       }
@@ -67,7 +70,7 @@ app.post('/', (req, res) => {
 
 // Define homepage for app
 app.route('/').get(function (req, res) {
-  res.sendFile(process.cwd() + 'index.html');
+  res.sendFile(process.cwd() + '/public/index.html');
 });
 
 // Express server listening...

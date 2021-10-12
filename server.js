@@ -9,12 +9,16 @@ const PORT = process.env.PORT || 5000;
 
 // Initialize Express app
 const app = express();
-// CORS
+
+// Middleware
 app.use(cors({ origin: '*' }));
 app.use(express.json()); // accept JSON
 app.use(express.urlencoded({ extended: true })); // accept URL-encoded data
+app.use(express.static('public')); // make public directory static
 
-app.use('/', express.static(process.cwd() + '/')); //make homepage static
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/public/index.html');
+});
 
 // Set up Nodemailer transporter object
 const transporter = nodemailer.createTransport({
@@ -68,10 +72,12 @@ app.post('/', (req, res) => {
   });
 });
 
+/*
 // Define homepage for app
 app.route('/').get(function (req, res) {
   res.sendFile(process.cwd() + '/public/index.html');
 });
+*/
 
 // Express server listening...
 app.listen(PORT, () => {

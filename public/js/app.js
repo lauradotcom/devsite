@@ -7,6 +7,7 @@ const formEvent = form.addEventListener('submit', event => {
   event.preventDefault();
   let mail = new FormData(form);
   sendMail(mail);
+  console.log(mail);
 })
 
 // Create sendMail function to submit the form data
@@ -17,6 +18,5 @@ const sendMail = (mail) => {
   })
   .then((response) => {
     return response.json();
-    console.log(response.json());
   })
 }

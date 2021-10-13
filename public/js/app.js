@@ -1,7 +1,12 @@
 // Client-side form handling
 
+const { response } = require("express");
+
 const form = document.getElementById('contact-form');
-let statusMessage = document.getElementById('status-message').innerText;
+let statusMessage = document.getElementById('status-message');
+let userName = document.getElementById('name');
+let userEmail = document.getElementById('email');
+let userMessage = document.getElementById('message');
 
 // Add event listener to the form
 const formEvent = form.addEventListener('submit', event => {
@@ -18,6 +23,13 @@ const sendMail = (mail) => {
   })
   .then((response) => {
     return response.json();
-    statusMessage = 'Thanks for your message!'
   })
+  if (response.status === 500) {
+    statusMessage.innerText = 'Sorry, your message could not be sent! Please try again in a minute.';
+  } else {
+    statusMessage.innerText = 'Thanks for your message!';
+    userName.value = '';
+    userEmail.value = '';
+    userMessage.value = '';
+  }
 }

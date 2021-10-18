@@ -305,17 +305,32 @@ header nav ul {
 
 @media screen and (min-width: 1024px) {
   #spacestagram {
-    background: linear-gradient(rgba(11, 124, 116, 0.9), rgba(11, 124, 116, 0.9)), url("../images/SpacestagramDesktopDM.png");
+    background-image: linear-gradient(rgba(11, 124, 116, 0.9), rgba(11, 124, 116, 0.9)), url("../images/SpacestagramDesktopDM.png");
+    background-position: center;
+    transition: background-image 7s ease-in;
+  }
+  #spacestagram:hover {
+    background-image: linear-gradient(rgba(11, 124, 116, 0.1), rgba(11, 124, 116, 0.1)), url("../images/SpacestagramDesktopDM.png");
     background-position: center;
   }
 
   #songcrush {
-    background: linear-gradient(rgba(35, 202, 190, 0.8), rgba(35, 202, 190, 0.8)), url("../images/SongCrushDesktop.png");
+    background-image: linear-gradient(rgba(35, 202, 190, 0.8), rgba(35, 202, 190, 0.8)), url("../images/SongCrushDesktop.png");
+    background-size: cover;
+    transition: background-image 2s ease-in;
+  }
+  #songcrush:hover {
+    background-image: linear-gradient(rgba(35, 202, 190, 0.1), rgba(35, 202, 190, 0.1)), url("../images/SongCrushDesktop.png");
     background-size: cover;
   }
 
   #prssa {
-    background: linear-gradient(rgba(11, 124, 116, 0.9), rgba(11, 124, 116, 0.9)), url("../images/PRSSA-Desktop.png");
+    background-image: linear-gradient(rgba(11, 124, 116, 0.9), rgba(11, 124, 116, 0.9)), url("../images/PRSSA-Desktop.png");
+    background-size: cover;
+    transition: background-image 7s ease-in;
+  }
+  #prssa:hover {
+    background-image: linear-gradient(rgba(11, 124, 116, 0.1), rgba(11, 124, 116, 0.1)), url("../images/PRSSA-Desktop.png");
     background-size: cover;
   }
 }

@@ -393,6 +393,19 @@ body.resume address {
   align-items: center;
   justify-content: center;
 }
+body.resume footer a {
+  color: #FBFCF5;
+  text-decoration: none;
+}
+body.resume footer a:hover {
+  color: #23CABE;
+}
+body.resume footer a:active {
+  color: #F0CA68;
+}
+body.resume footer span {
+  padding-right: 1rem;
+}
 
 #contact-detail {
   color: #F0CA68;

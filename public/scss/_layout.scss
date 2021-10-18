@@ -321,6 +321,21 @@ body.resume {
     align-items: center;
     justify-content: center;
   }
+  footer {
+    a {
+      color: $offWhite;
+      text-decoration: none;
+      &:hover {
+        color: $lightTeal;
+      }
+      &:active {
+        color: $yellowOrange;
+      }
+    }
+    span {
+      padding-right: 1rem;
+    }
+  }
 }
 
 

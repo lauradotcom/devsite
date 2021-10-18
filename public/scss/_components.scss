@@ -67,3 +67,12 @@ form {
     color: $lightTeal;
   }
 }
+
+.skill {
+  &:hover {
+    span {
+      color: $navy;
+      padding-left: 0.75rem;
+    }
+  }
+}

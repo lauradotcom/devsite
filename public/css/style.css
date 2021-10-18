@@ -108,6 +108,11 @@ form div#status-message {
   color: #23CABE;
 }
 
+.skill:hover span {
+  color: #0B232E;
+  padding-left: 0.75rem;
+}
+
 /* ======== Global Formatting ======== */
 body {
   padding: 0;

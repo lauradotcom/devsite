@@ -50,7 +50,7 @@ let sass = skillTags[7];
 // Add mouseover/mouseout event listeners for each tag
 
 HTML.addEventListener('mouseover', function() {
-  this.innerHTML = `<i class="fab fa-html5"></i>`;
+  this.innerHTML += `<span class="fab fa-html5"></span>`;
 })
 
 HTML.addEventListener('mouseout', function() {
@@ -58,7 +58,7 @@ HTML.addEventListener('mouseout', function() {
 })
 
 CSS.addEventListener('mouseover', function() {
-  this.innerHTML = `<i class="fab fa-css3"></i>`;
+  this.innerHTML += `<span class="fab fa-css3"></span>`;
 })
 
 CSS.addEventListener('mouseout', function() {
@@ -66,7 +66,7 @@ CSS.addEventListener('mouseout', function() {
 })
 
 javaScript.addEventListener('mouseover', function() {
-  this.innerHTML = `<i class="fab fa-js"></i>`;
+  this.innerHTML += `<span class="fab fa-js"></span>`;
 })
 
 javaScript.addEventListener('mouseout', function() {
@@ -74,7 +74,7 @@ javaScript.addEventListener('mouseout', function() {
 })
 
 react.addEventListener('mouseover', function() {
-  this.innerHTML = `<i class="fab fa-react"></i>`;
+  this.innerHTML += `<span class="fab fa-react"></span>`;
 })
 
 react.addEventListener('mouseout', function() {
@@ -82,7 +82,7 @@ react.addEventListener('mouseout', function() {
 })
 
 node.addEventListener('mouseover', function() {
-  this.innerHTML = `<i class="fab fa-node"></i>`;
+  this.innerHTML += `<span class="fab fa-node"></span>`;
 })
 
 node.addEventListener('mouseout', function() {
@@ -90,7 +90,7 @@ node.addEventListener('mouseout', function() {
 })
 
 bootstrap.addEventListener('mouseover', function() {
-  this.innerHTML = `<i class="fab fa-bootstrap"></i>`;
+  this.innerHTML += `<span class="fab fa-bootstrap"></span>`;
 })
 
 bootstrap.addEventListener('mouseout', function() {
@@ -98,7 +98,7 @@ bootstrap.addEventListener('mouseout', function() {
 })
 
 sql.addEventListener('mouseover', function() {
-  this.innerHTML = `<i class="fas fa-database"></i>`;
+  this.innerHTML += `<span class="fas fa-database"></span>`;
 })
 
 sql.addEventListener('mouseout', function() {
@@ -106,7 +106,7 @@ sql.addEventListener('mouseout', function() {
 })
 
 sass.addEventListener('mouseover', function() {
-  this.innerHTML = `<i class="fab fa-sass"></i>`;
+  this.innerHTML += `<span class="fab fa-sass"></span>`;
 })
 
 sass.addEventListener('mouseout', function() {

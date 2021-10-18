@@ -108,9 +108,14 @@ form div#status-message {
   color: #23CABE;
 }
 
+.skill span {
+  padding-left: 0.75rem;
+}
+.skill span:hover {
+  color: #0B232E;
+}
 .skill:hover span {
   color: #0B232E;
-  padding-left: 0.75rem;
 }
 
 /* ======== Global Formatting ======== */

@@ -49,6 +49,7 @@ let sass = skillTags[7];
 
 // Add mouseover/mouseout event listeners for each tag
 
+/*
 HTML.addEventListener('mouseover', function() {
   this.innerHTML += `<span class="fab fa-html5"></span>`;
 })
@@ -112,3 +113,4 @@ sass.addEventListener('mouseover', function() {
 sass.addEventListener('mouseout', function() {
   this.innerHTML = 'Sass';
 })
+*/

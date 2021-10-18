@@ -243,6 +243,7 @@ header nav ul {
 #portfolio article:nth-child(even) {
   background-color: #0B7C74;
   color: #FBFCF5;
+  animation: easeIn 2s;
 }
 #portfolio article:nth-child(odd) {
   background-color: #F0CA68;
@@ -520,6 +521,18 @@ footer ul span {
 }
 footer p {
   font-size: 0.75rem;
+}
+
+@keyframes easeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -135,6 +135,7 @@ header {
     &:nth-child(even) {
       background-color: $darkTeal;
       color: $offWhite;
+      animation: easeIn 2s;
     }
     &:nth-child(odd) {
       background-color: $yellowOrange;

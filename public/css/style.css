@@ -5,8 +5,14 @@ html {
   color: #0B232E;
   font-weight: 300;
   background-color: #FBFCF5;
+  scroll-behavior: smooth;
 }
 
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
 h1 {
   font-size: 1.75rem;
   font-family: "Arvo", serif;
@@ -56,6 +62,7 @@ button, input[type=submit], a.action {
   padding: 0.75rem 1rem;
   border-radius: 100px;
   cursor: pointer;
+  transition: background-color 500ms ease-in-out, color 500ms linear;
 }
 button:hover, input[type=submit]:hover, a.action:hover {
   background-color: #23CABE;
@@ -298,17 +305,32 @@ header nav ul {
 
 @media screen and (min-width: 1024px) {
   #spacestagram {
-    background: linear-gradient(rgba(11, 124, 116, 0.9), rgba(11, 124, 116, 0.9)), url("../images/SpacestagramDesktopDM.png");
+    background-image: linear-gradient(rgba(11, 124, 116, 0.9), rgba(11, 124, 116, 0.9)), url("../images/SpacestagramDesktopDM.png");
+    background-position: center;
+    transition: background-image 7s ease-in;
+  }
+  #spacestagram:hover {
+    background-image: linear-gradient(rgba(11, 124, 116, 0.1), rgba(11, 124, 116, 0.1)), url("../images/SpacestagramDesktopDM.png");
     background-position: center;
   }
 
   #songcrush {
-    background: linear-gradient(rgba(35, 202, 190, 0.8), rgba(35, 202, 190, 0.8)), url("../images/SongCrushDesktop.png");
+    background-image: linear-gradient(rgba(35, 202, 190, 0.8), rgba(35, 202, 190, 0.8)), url("../images/SongCrushDesktop.png");
+    background-size: cover;
+    transition: background-image 2s ease-in;
+  }
+  #songcrush:hover {
+    background-image: linear-gradient(rgba(35, 202, 190, 0.1), rgba(35, 202, 190, 0.1)), url("../images/SongCrushDesktop.png");
     background-size: cover;
   }
 
   #prssa {
-    background: linear-gradient(rgba(11, 124, 116, 0.9), rgba(11, 124, 116, 0.9)), url("../images/PRSSA-Desktop.png");
+    background-image: linear-gradient(rgba(11, 124, 116, 0.9), rgba(11, 124, 116, 0.9)), url("../images/PRSSA-Desktop.png");
+    background-size: cover;
+    transition: background-image 7s ease-in;
+  }
+  #prssa:hover {
+    background-image: linear-gradient(rgba(11, 124, 116, 0.1), rgba(11, 124, 116, 0.1)), url("../images/PRSSA-Desktop.png");
     background-size: cover;
   }
 }

@@ -333,31 +333,35 @@ body.resume header a:visited {
 }
 body.resume section {
   margin: 5vh 5vw;
+  padding: 0;
+}
+body.resume section article {
+  padding: 0;
 }
 body.resume h2, body.resume h3 {
   text-align: left;
   font-family: "Lato", Helvetica, sans-serif;
   font-weight: 700;
+  margin-bottom: 1rem;
 }
 body.resume h1 {
   font-weight: 400;
   font-size: 2.25rem;
   line-height: 2.25rem;
   text-transform: none;
-  padding-bottom: 2vh;
+  margin-bottom: 1.25rem;
 }
 body.resume h2 {
   font-size: 1.5rem;
   line-height: 1.75rem;
   text-transform: uppercase;
-  padding-bottom: 2vh;
 }
 body.resume h3 {
   font-size: 1.25rem;
   line-height: 1.5rem;
   text-transform: uppercase;
-  padding-top: 2vh;
-  padding-bottom: 1vh;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
 }
 body.resume i {
   font-size: 1.5rem;

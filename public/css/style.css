@@ -208,6 +208,14 @@ header nav ul {
   align-items: center;
 }
 
+@media screen and (min-width: 1024px) {
+  #about .blurb {
+    width: 50%;
+  }
+  #about .blurb h2 {
+    align-self: flex-start;
+  }
+}
 /* ======== Portfolio Section ======== */
 #portfolio {
   display: grid;
@@ -243,6 +251,7 @@ header nav ul {
 #portfolio article:nth-child(even) {
   background-color: #0B7C74;
   color: #FBFCF5;
+  animation: easeIn 2s;
 }
 #portfolio article:nth-child(odd) {
   background-color: #F0CA68;

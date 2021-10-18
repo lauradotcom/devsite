@@ -99,6 +99,15 @@ header {
   align-items: center;
 }
 
+@media screen and (min-width: $laptop) {
+  #about .blurb {
+    width: 50%;
+    h2 {
+      align-self: flex-start;
+    }
+  }
+}
+
 /* ======== Portfolio Section ======== */
 
 // Mobile
@@ -135,6 +144,7 @@ header {
     &:nth-child(even) {
       background-color: $darkTeal;
       color: $offWhite;
+      animation: easeIn 2s;
     }
     &:nth-child(odd) {
       background-color: $yellowOrange;

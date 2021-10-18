@@ -5,6 +5,7 @@ html {
   color: #0B232E;
   font-weight: 300;
   background-color: #FBFCF5;
+  scroll-behavior: smooth;
 }
 
 h1 {

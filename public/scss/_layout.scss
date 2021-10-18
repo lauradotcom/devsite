@@ -209,19 +209,19 @@ header {
 // Mobile 
 
 #spacestagram {
-  background: linear-gradient($darkTealOverlay, $darkTealOverlay), url('../../resources/images/SpacestagramMobile.jpg');
+  background: linear-gradient($darkTealOverlay, $darkTealOverlay), url('../images/SpacestagramMobile.jpg');
   background-size: cover;
   background-position: center;
 }
 
 #songcrush {
-  background-image: linear-gradient($yellowOrangeOverlay, $yellowOrangeOverlay), url('../../resources/images/SongCrushMobile.jpg');
+  background-image: linear-gradient($yellowOrangeOverlay, $yellowOrangeOverlay), url('../images/SongCrushMobile.jpg');
   background-size: cover;
   background-position: center;
 }
 
 #prssa {
-  background-image: linear-gradient($darkTealOverlay, $darkTealOverlay), url('../../resources/images/PRSSA-Mobile.jpg');
+  background-image: linear-gradient($darkTealOverlay, $darkTealOverlay), url('../images/PRSSA-Mobile.jpg');
   background-size: cover;
   background-position: top;
 }
@@ -230,17 +230,17 @@ header {
 
 @media screen and (min-width: $laptop) {
   #spacestagram {
-    background: linear-gradient($darkTealOverlay, $darkTealOverlay), url('../../resources/images/SpacestagramDesktopDM.png');
+    background: linear-gradient($darkTealOverlay, $darkTealOverlay), url('../images/SpacestagramDesktopDM.png');
     background-position: center;
   }
 
   #songcrush {
-    background: linear-gradient($lightTealOverlay, $lightTealOverlay), url('../../resources/images/SongCrushDesktop.png');
+    background: linear-gradient($lightTealOverlay, $lightTealOverlay), url('../images/SongCrushDesktop.png');
     background-size: cover;
   }
 
   #prssa {
-    background: linear-gradient($darkTealOverlay, $darkTealOverlay), url('../../resources/images/PRSSA-Desktop.png');
+    background: linear-gradient($darkTealOverlay, $darkTealOverlay), url('../images/PRSSA-Desktop.png');
     background-size: cover;
   }
 }

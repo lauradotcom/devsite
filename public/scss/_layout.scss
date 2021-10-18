@@ -337,9 +337,9 @@ body.resume {
     background-color: $darkTeal;
     color: $offWhite;
     font-weight: 400;
-    padding: 1vh 2vw;
-    margin-right: 2vw;
-    margin-bottom: 1vh;
+    padding: 0.5rem 1rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
     border-radius: 5px;
     cursor: default;
     &:hover {
@@ -347,7 +347,7 @@ body.resume {
       color: $navy;
       transition-duration: 150ms;
     }
-    i {
+    span {
       font-size: 1rem;
     }
   }

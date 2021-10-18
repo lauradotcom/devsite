@@ -402,9 +402,9 @@ body.resume address {
   background-color: #0B7C74;
   color: #FBFCF5;
   font-weight: 400;
-  padding: 1vh 2vw;
-  margin-right: 2vw;
-  margin-bottom: 1vh;
+  padding: 0.5rem 1rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
   border-radius: 5px;
   cursor: default;
 }
@@ -413,7 +413,7 @@ body.resume address {
   color: #0B232E;
   transition-duration: 150ms;
 }
-.skills li i {
+.skills li span {
   font-size: 1rem;
 }
 

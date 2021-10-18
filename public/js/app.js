@@ -29,6 +29,9 @@ const sendMail = (mail) => {
       userName.value = '';
       userEmail.value = '';
       userMessage.value = '';
+      setTimeout(function() {
+        statusMessage.innerText = '';
+      }, 5000)
       }
     return response.json();
   })

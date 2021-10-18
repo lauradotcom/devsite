@@ -230,20 +230,36 @@ header {
 
 @media screen and (min-width: $laptop) {
   #spacestagram {
-    background: linear-gradient($darkTealOverlay, $darkTealOverlay), url('../images/SpacestagramDesktopDM.png');
+    background-image: linear-gradient($darkTealOverlay, $darkTealOverlay), url('../images/SpacestagramDesktopDM.png');
     background-position: center;
+    transition: background-image 7s ease-in;
+    &:hover {
+      background-image: linear-gradient($darkTealLightOverlay, $darkTealLightOverlay), url('../images/SpacestagramDesktopDM.png');
+      background-position: center;
+    }
   }
 
   #songcrush {
-    background: linear-gradient($lightTealOverlay, $lightTealOverlay), url('../images/SongCrushDesktop.png');
+    background-image: linear-gradient($lightTealOverlay, $lightTealOverlay), url('../images/SongCrushDesktop.png');
     background-size: cover;
+    transition: background-image 2s ease-in;
+    &:hover {
+      background-image: linear-gradient($lightTealLightOverlay, $lightTealLightOverlay), url('../images/SongCrushDesktop.png');
+      background-size: cover;
+    }
   }
 
   #prssa {
-    background: linear-gradient($darkTealOverlay, $darkTealOverlay), url('../images/PRSSA-Desktop.png');
+    background-image: linear-gradient($darkTealOverlay, $darkTealOverlay), url('../images/PRSSA-Desktop.png');
     background-size: cover;
+    transition: background-image 7s ease-in;
+    &:hover {
+      background-image: linear-gradient($darkTealLightOverlay, $darkTealLightOverlay), url('../images/PRSSA-Desktop.png');
+      background-size: cover;
+    }
   }
 }
+
 
 /* ======== Contact Section ======== */
 

@@ -269,6 +269,169 @@ header {
   padding: 2rem;
 }
 
+/* ======== Resume Page ======== */ 
+
+body.resume {
+  header {
+    display: block;
+    text-align: center;
+    background-color: $darkTeal;
+    color: $offWhite;
+    margin: 0;
+    a {
+      color: $offWhite;
+      &:visited {
+        color: $offWhite;
+      }
+    }
+  }
+  section {
+    margin: 5vh 5vw;
+    padding: 0;
+    article {
+      padding: 0;
+    }
+  }
+  h2, h3 {
+    text-align: left;
+    font-family: $body;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  h1 {
+    font-weight: 400;
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+    text-transform: none;
+    margin-bottom: 1.25rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    text-transform: uppercase;
+  }
+  h3 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  i {
+    font-size: 1.5rem;
+    margin: 2%;
+    &:hover {
+      color: $lightTeal;
+    }
+  }
+  hr {
+    width: 5vw;
+    margin: 0 0 2vh 0;
+    border: solid 1px $darkTeal;
+  }
+  address {
+    display: grid;
+    grid-template-columns: repeat(5, 48px);
+    grid-template-rows: 48px;
+    justify-items: stretch;
+    align-items: center;
+    justify-content: center;
+  }
+  footer {
+    a {
+      color: $offWhite;
+      text-decoration: none;
+      &:hover {
+        color: $lightTeal;
+      }
+      &:active {
+        color: $yellowOrange;
+      }
+    }
+    span {
+      padding-right: 1rem;
+    }
+  }
+}
+
+
+
+#contact-detail {
+  color: $yellowOrange;
+  font-weight: 400;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  li {
+    background-color: $darkTeal;
+    color: $offWhite;
+    font-weight: 400;
+    padding: 0.5rem 1rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    cursor: default;
+    &:hover {
+      background-color: $lightTeal;
+      color: $navy;
+      transition-duration: 150ms;
+    }
+    span {
+      font-size: 1rem;
+    }
+  }
+}
+
+#experience {
+  p {
+    font-weight: 400;
+    font-style: italic;
+    padding-bottom: 1rem;
+  }
+  ul {
+    list-style: disc;
+    padding-left: 2rem;
+    li {
+      padding-bottom: 0.5rem;
+      a {
+        color: $darkTeal;
+        font-weight: 400;
+        &:hover {
+          color: $lightTeal;
+        }
+        &:active {
+          color: $yellowOrange;
+        }
+      }
+    }
+  }
+}
+
+.school {
+  font-style: italic;
+  font-weight: 400;
+}
+
+@media screen and (min-width: $laptop) {
+
+  #education {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto 1fr;
+    grid-template-areas: "header header header header"
+    "divider divider divider divider"
+    "item item item item";
+    h2 {
+      grid-area: header;
+    }
+    hr {
+      grid-area: divider;
+    }
+  }
+}
+
 /* ======== Footer ======== */ 
 
 // Mobile

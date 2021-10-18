@@ -115,6 +115,16 @@ form div#status-message {
   color: #23CABE;
 }
 
+.skill span {
+  padding-left: 0.75rem;
+}
+.skill span:hover {
+  color: #0B232E;
+}
+.skill:hover span {
+  color: #0B232E;
+}
+
 /* ======== Global Formatting ======== */
 body {
   padding: 0;
@@ -339,6 +349,156 @@ header nav ul {
   padding: 2rem;
 }
 
+/* ======== Resume Page ======== */
+body.resume header {
+  display: block;
+  text-align: center;
+  background-color: #0B7C74;
+  color: #FBFCF5;
+  margin: 0;
+}
+body.resume header a {
+  color: #FBFCF5;
+}
+body.resume header a:visited {
+  color: #FBFCF5;
+}
+body.resume section {
+  margin: 5vh 5vw;
+  padding: 0;
+}
+body.resume section article {
+  padding: 0;
+}
+body.resume h2, body.resume h3 {
+  text-align: left;
+  font-family: "Lato", Helvetica, sans-serif;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+body.resume h1 {
+  font-weight: 400;
+  font-size: 2.25rem;
+  line-height: 2.25rem;
+  text-transform: none;
+  margin-bottom: 1.25rem;
+}
+body.resume h2 {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  text-transform: uppercase;
+}
+body.resume h3 {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+body.resume i {
+  font-size: 1.5rem;
+  margin: 2%;
+}
+body.resume i:hover {
+  color: #23CABE;
+}
+body.resume hr {
+  width: 5vw;
+  margin: 0 0 2vh 0;
+  border: solid 1px #0B7C74;
+}
+body.resume address {
+  display: grid;
+  grid-template-columns: repeat(5, 48px);
+  grid-template-rows: 48px;
+  justify-items: stretch;
+  align-items: center;
+  justify-content: center;
+}
+body.resume footer a {
+  color: #FBFCF5;
+  text-decoration: none;
+}
+body.resume footer a:hover {
+  color: #23CABE;
+}
+body.resume footer a:active {
+  color: #F0CA68;
+}
+body.resume footer span {
+  padding-right: 1rem;
+}
+
+#contact-detail {
+  color: #F0CA68;
+  font-weight: 400;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+.skills li {
+  background-color: #0B7C74;
+  color: #FBFCF5;
+  font-weight: 400;
+  padding: 0.5rem 1rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  cursor: default;
+}
+.skills li:hover {
+  background-color: #23CABE;
+  color: #0B232E;
+  transition-duration: 150ms;
+}
+.skills li span {
+  font-size: 1rem;
+}
+
+#experience p {
+  font-weight: 400;
+  font-style: italic;
+  padding-bottom: 1rem;
+}
+#experience ul {
+  list-style: disc;
+  padding-left: 2rem;
+}
+#experience ul li {
+  padding-bottom: 0.5rem;
+}
+#experience ul li a {
+  color: #0B7C74;
+  font-weight: 400;
+}
+#experience ul li a:hover {
+  color: #23CABE;
+}
+#experience ul li a:active {
+  color: #F0CA68;
+}
+
+.school {
+  font-style: italic;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 1024px) {
+  #education {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto 1fr;
+    grid-template-areas: "header header header header" "divider divider divider divider" "item item item item";
+  }
+  #education h2 {
+    grid-area: header;
+  }
+  #education hr {
+    grid-area: divider;
+  }
+}
 /* ======== Footer ======== */
 footer {
   display: flex;

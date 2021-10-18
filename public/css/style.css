@@ -425,14 +425,24 @@ body.resume address {
 #experience p {
   font-weight: 400;
   font-style: italic;
-  padding-bottom: 1vh;
+  padding-bottom: 1rem;
 }
 #experience ul {
   list-style: disc;
-  padding-left: 2vw;
+  padding-left: 2rem;
 }
 #experience ul li {
-  padding-bottom: 0.5vh;
+  padding-bottom: 0.5rem;
+}
+#experience ul li a {
+  color: #0B7C74;
+  font-weight: 400;
+}
+#experience ul li a:hover {
+  color: #23CABE;
+}
+#experience ul li a:active {
+  color: #F0CA68;
 }
 
 .school {

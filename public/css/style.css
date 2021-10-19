@@ -89,6 +89,7 @@ form input[type=text], form input[type=email], form textarea {
   border: 1px solid #0B232E;
   background-color: #FBFCF5;
   color: #0B232E;
+  font-size: 1rem;
   margin-bottom: 1rem;
 }
 form input[type=text], form input[type=email] {

@@ -46,6 +46,9 @@ article {
 // Desktop Styles
 
 @media screen and (min-width: $laptop) {
+  html {
+    font-size: 18px;
+  }
   h1 {
     font-size: 2rem;
   }

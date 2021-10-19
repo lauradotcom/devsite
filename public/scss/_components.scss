@@ -35,10 +35,14 @@ form {
     border: 1px solid $navy;
     background-color: $offWhite;
     color: $navy;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 300;
     margin-bottom: 1rem;
+    padding: 0.25rem;
   }
   input[type="text"], input[type="email"] {
-    height: 1.5rem;
+    height: 2rem;
   }
   textarea {
     min-height: 20vh;
@@ -62,6 +66,8 @@ form {
 }
 
 /* ======== Icons ======= */
+
+// Global
 .fab, .fas, .far {
   color: $offWhite;
   &:hover {
@@ -69,6 +75,23 @@ form {
   }
 }
 
+// Portfolio Mobile
+@media screen and (max-width: $laptop - 1) {
+  #portfolio {
+    article {
+      &:nth-child(odd) {
+        .fab, .fas, .far {
+          color: $navy;
+          &:hover {
+            color: $darkTeal;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Resume
 .skill {
   span {
     padding-left: 0.75rem;

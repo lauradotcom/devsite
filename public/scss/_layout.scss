@@ -99,6 +99,15 @@ header {
   align-items: center;
 }
 
+@media screen and (min-width: $laptop) {
+  #about .blurb {
+    width: 50%;
+    h2 {
+      align-self: flex-start;
+    }
+  }
+}
+
 /* ======== Portfolio Section ======== */
 
 // Mobile
@@ -135,10 +144,12 @@ header {
     &:nth-child(even) {
       background-color: $darkTeal;
       color: $offWhite;
+      animation: easeIn 2s;
     }
     &:nth-child(odd) {
       background-color: $yellowOrange;
       ul.icons {
+        color: $navy;
         li:hover {
           color: $darkTeal;
         }
@@ -159,7 +170,7 @@ header {
         background-color: $navy;
         padding: 1rem;
         width: 100%;
-        height: 75%;
+        min-height: 75%;
         position: relative;
       }
       &:nth-child(even) {
@@ -187,8 +198,8 @@ header {
   #portfolio {
     article {
       div {
-        width: 60%;
-        height: 80%;
+        width: 70%;
+        min-height: 80%;
       }
       &:nth-child(even) {
         div {

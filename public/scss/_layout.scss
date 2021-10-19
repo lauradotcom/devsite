@@ -149,6 +149,7 @@ header {
     &:nth-child(odd) {
       background-color: $yellowOrange;
       ul.icons {
+        color: $navy;
         li:hover {
           color: $darkTeal;
         }

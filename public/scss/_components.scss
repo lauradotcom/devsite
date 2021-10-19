@@ -66,6 +66,8 @@ form {
 }
 
 /* ======== Icons ======= */
+
+// Global
 .fab, .fas, .far {
   color: $offWhite;
   &:hover {
@@ -73,6 +75,23 @@ form {
   }
 }
 
+// Portfolio Mobile
+@media screen and (max-width: $laptop - 1) {
+  #portfolio {
+    article {
+      &:nth-child(odd) {
+        .fab, .fas, .far {
+          color: $navy;
+          &:hover {
+            color: $darkTeal;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Resume
 .skill {
   span {
     padding-left: 0.75rem;

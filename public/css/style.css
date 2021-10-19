@@ -123,6 +123,14 @@ form div#status-message {
   color: #23CABE;
 }
 
+@media screen and (max-width: 1023px) {
+  #portfolio article:nth-child(odd) .fab, #portfolio article:nth-child(odd) .fas, #portfolio article:nth-child(odd) .far {
+    color: #0B232E;
+  }
+  #portfolio article:nth-child(odd) .fab:hover, #portfolio article:nth-child(odd) .fas:hover, #portfolio article:nth-child(odd) .far:hover {
+    color: #0B7C74;
+  }
+}
 .skill span {
   padding-left: 0.75rem;
 }
@@ -263,6 +271,9 @@ header nav ul {
 }
 #portfolio article:nth-child(odd) {
   background-color: #F0CA68;
+}
+#portfolio article:nth-child(odd) ul.icons {
+  color: #0B232E;
 }
 #portfolio article:nth-child(odd) ul.icons li:hover {
   color: #0B7C74;

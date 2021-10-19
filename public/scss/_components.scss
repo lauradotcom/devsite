@@ -35,8 +35,11 @@ form {
     border: 1px solid $navy;
     background-color: $offWhite;
     color: $navy;
+    font-family: inherit;
     font-size: 1rem;
+    font-weight: 300;
     margin-bottom: 1rem;
+    padding: 0.25rem;
   }
   input[type="text"], input[type="email"] {
     height: 2rem;

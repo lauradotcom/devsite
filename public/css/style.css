@@ -89,8 +89,11 @@ form input[type=text], form input[type=email], form textarea {
   border: 1px solid #0B232E;
   background-color: #FBFCF5;
   color: #0B232E;
+  font-family: inherit;
   font-size: 1rem;
+  font-weight: 300;
   margin-bottom: 1rem;
+  padding: 0.25rem;
 }
 form input[type=text], form input[type=email] {
   height: 2rem;

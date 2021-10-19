@@ -86,7 +86,7 @@
           <h2>Get In Touch</h2>
           <p>Have a question? Interested in working together? Let's chat!</p>
         </article>
-        <form action="#" id="contact-form" method="POST" enctype="multipart/form-data" name="EmailForm">
+        <form action="#" id="contact-form" method="POST" enctype="multipart/form-data" name="EmailForm" data-netlify="true" data-netlify-recaptcha="true">
           <label for="name">
             Name
           </label>
@@ -99,6 +99,7 @@
             Message
           </label>
           <textarea id="message" name="message" required minlength="100" maxlength="1000"></textarea>
+          <div data-netlify-recaptcha="true"></div>
           <button type="submit">Send</button>
           <div id="status-message"></div>
         </form>

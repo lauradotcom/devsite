@@ -330,7 +330,7 @@ header nav ul {
 }
 
 #stepup {
-  background-image: linear-gradient(rgba(240, 202, 104, 0.9), rgba(240, 202, 104, 0.9)), url("../images/StepUp.png");
+  background-image: linear-gradient(rgba(240, 202, 104, 0.9), rgba(240, 202, 104, 0.9)), url("../images/StepUp-Desktop.png");
   background-size: cover;
   background-position: center;
 }
@@ -365,12 +365,12 @@ header nav ul {
   }
 
   #stepup {
-    background-image: linear-gradient(rgba(35, 202, 190, 0.8), rgba(35, 202, 190, 0.8)), url("../images/StepUp.png");
+    background-image: linear-gradient(rgba(35, 202, 190, 0.8), rgba(35, 202, 190, 0.8)), url("../images/StepUp-Desktop.png");
     background-size: cover;
     transition: background-image 2s ease-in;
   }
   #stepup:hover {
-    background-image: linear-gradient(rgba(35, 202, 190, 0.1), rgba(35, 202, 190, 0.1)), url("../images/StepUp.png");
+    background-image: linear-gradient(rgba(35, 202, 190, 0.1), rgba(35, 202, 190, 0.1)), url("../images/StepUp-Desktop.png");
     background-size: cover;
   }
 

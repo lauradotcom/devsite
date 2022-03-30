@@ -218,6 +218,17 @@ header {
 /* ======== Background images for porfolio items ======== */
 
 // Mobile 
+#ecommstore {
+  background: linear-gradient($darkTealOverlay, $darkTealOverlay), url('../images/ecommStore-Desktop.png');
+  background-size: cover;
+  background-position: center;
+}
+
+#stepup {
+  background-image: linear-gradient($yellowOrangeOverlay, $yellowOrangeOverlay), url('../images/StepUp-Desktop.png');
+  background-size: cover;
+  background-position: center;
+}
 
 #spacestagram {
   background: linear-gradient($darkTealOverlay, $darkTealOverlay), url('../images/SpacestagramMobile.jpg');
@@ -240,6 +251,26 @@ header {
 // Desktop
 
 @media screen and (min-width: $laptop) {
+  #ecommstore {
+    background-image: linear-gradient($darkTealOverlay, $darkTealOverlay), url('../images/ecommStore-Desktop.png');
+    background-position: center;
+    transition: background-image 7s ease-in;
+    &:hover {
+      background-image: linear-gradient($darkTealLightOverlay, $darkTealLightOverlay), url('../images/ecommStore-Desktop.png');
+      background-position: center;
+    }
+  }
+
+  #stepup {
+    background-image: linear-gradient($lightTealOverlay, $lightTealOverlay), url('../images/StepUp-Desktop.png');
+    background-size: cover;
+    transition: background-image 2s ease-in;
+    &:hover {
+      background-image: linear-gradient($lightTealLightOverlay, $lightTealLightOverlay), url('../images/StepUp-Desktop.png');
+      background-size: cover;
+    }
+  }
+
   #spacestagram {
     background-image: linear-gradient($darkTealOverlay, $darkTealOverlay), url('../images/SpacestagramDesktopDM.png');
     background-position: center;

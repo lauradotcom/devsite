@@ -323,6 +323,12 @@ header nav ul {
   }
 }
 /* ======== Background images for porfolio items ======== */
+#ecommstore {
+  background: linear-gradient(rgba(11, 124, 116, 0.9), rgba(11, 124, 116, 0.9)), url("../images/ecommStore-Desktop.png");
+  background-size: cover;
+  background-position: center;
+}
+
 #stepup {
   background-image: linear-gradient(rgba(240, 202, 104, 0.9), rgba(240, 202, 104, 0.9)), url("../images/StepUp.png");
   background-size: cover;
@@ -348,6 +354,16 @@ header nav ul {
 }
 
 @media screen and (min-width: 1024px) {
+  #ecommstore {
+    background-image: linear-gradient(rgba(11, 124, 116, 0.9), rgba(11, 124, 116, 0.9)), url("../images/ecommStore-Desktop.png");
+    background-position: center;
+    transition: background-image 7s ease-in;
+  }
+  #ecommstore:hover {
+    background-image: linear-gradient(rgba(11, 124, 116, 0.1), rgba(11, 124, 116, 0.1)), url("../images/ecommStore-Desktop.png");
+    background-position: center;
+  }
+
   #stepup {
     background-image: linear-gradient(rgba(35, 202, 190, 0.8), rgba(35, 202, 190, 0.8)), url("../images/StepUp.png");
     background-size: cover;

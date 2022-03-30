@@ -323,6 +323,12 @@ header nav ul {
   }
 }
 /* ======== Background images for porfolio items ======== */
+#stepup {
+  background-image: linear-gradient(rgba(240, 202, 104, 0.9), rgba(240, 202, 104, 0.9)), url("../images/StepUp.png");
+  background-size: cover;
+  background-position: center;
+}
+
 #spacestagram {
   background: linear-gradient(rgba(11, 124, 116, 0.9), rgba(11, 124, 116, 0.9)), url("../images/SpacestagramMobile.jpg");
   background-size: cover;
@@ -342,6 +348,16 @@ header nav ul {
 }
 
 @media screen and (min-width: 1024px) {
+  #stepup {
+    background-image: linear-gradient(rgba(35, 202, 190, 0.8), rgba(35, 202, 190, 0.8)), url("../images/StepUp.png");
+    background-size: cover;
+    transition: background-image 2s ease-in;
+  }
+  #stepup:hover {
+    background-image: linear-gradient(rgba(35, 202, 190, 0.1), rgba(35, 202, 190, 0.1)), url("../images/StepUp.png");
+    background-size: cover;
+  }
+
   #spacestagram {
     background-image: linear-gradient(rgba(11, 124, 116, 0.9), rgba(11, 124, 116, 0.9)), url("../images/SpacestagramDesktopDM.png");
     background-position: center;

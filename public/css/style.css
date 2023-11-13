@@ -249,6 +249,38 @@ header nav ul {
     align-self: flex-start;
   }
 }
+/* ======== Tabbed Navigation ======== */
+.nav-tabs .nav-link {
+  font-family: "Lato", Helvetica, sans-serif !important;
+  font-size: 18px !important;
+  color: #0B232E;
+  text-transform: none !important;
+}
+
+.nav-link.active {
+  color: #0B7C74 !important;
+  border-color: #0B7C74 !important;
+}
+
+.nav-item {
+  font-family: "Lato", Helvetica, sans-serif;
+  color: #0B7C74;
+}
+
+.active {
+  color: #0B7C74;
+  border: #0B7C74;
+}
+
+#ex1-content {
+  width: 100vw;
+}
+
+.tab-pane {
+  width: 100vw;
+  font-family: "Lato", Helvetica, sans-serif;
+}
+
 /* ======== Portfolio Section ======== */
 #portfolio {
   display: grid;

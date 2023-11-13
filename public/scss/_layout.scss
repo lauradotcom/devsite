@@ -108,6 +108,40 @@ header {
   }
 }
 
+/* ======== Tabbed Navigation ======== */
+
+.nav-tabs .nav-link {
+  font-family: $body !important;
+  font-size: 18px !important;
+  color: $navy;
+  text-transform: none !important;
+}
+
+.nav-link.active {
+  color: $darkTeal !important;
+  border-color: $darkTeal !important;
+}
+
+.nav-item {
+  font-family: $body;
+  color: $darkTeal;
+}
+
+
+
+.active {
+  color: $darkTeal;
+  border: $darkTeal;
+}
+
+#ex1-content{
+  width:100vw;}
+
+.tab-pane {
+  width: 100vw;
+  font-family: $body;
+}
+
 /* ======== Portfolio Section ======== */
 
 // Mobile

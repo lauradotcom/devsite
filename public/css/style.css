@@ -1,4 +1,8 @@
 /* ========= Variables ========== */
+:root {
+  font-family: "Lato", Helvetica, sans-serif;
+}
+
 ::-moz-selection {
   color: #0B232E;
   background: #F0CA68;
@@ -9,7 +13,7 @@
   background: #F0CA68;
 }
 
-html {
+html, body {
   font-size: 16px;
   font-family: "Lato", Helvetica, sans-serif;
   color: #0B232E;
@@ -33,8 +37,17 @@ h2 {
   text-align: center;
 }
 
-h3 {
+h3, h3 > a {
   font-size: 1.25rem;
+  font-family: "Lato", Helvetica, sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h4 {
+  font-size: 1.1rem;
   font-family: "Lato", Helvetica, sans-serif;
   font-weight: 700;
   margin-top: 0.5rem;
@@ -48,6 +61,7 @@ article {
 
 a {
   color: #0B7C74;
+  text-decoration: underline;
 }
 a:visited {
   color: #0B7C74;
@@ -141,10 +155,10 @@ form div#status-message {
 }
 
 @media screen and (max-width: 1024px) {
-  #portfolio article:nth-child(odd) .fab, #portfolio article:nth-child(odd) .fas, #portfolio article:nth-child(odd) .far {
+  #portfolio-web article:nth-child(odd) .fab, #portfolio-web article:nth-child(odd) .fas, #portfolio-web article:nth-child(odd) .far {
     color: #0B232E;
   }
-  #portfolio article:nth-child(odd) .fab:hover, #portfolio article:nth-child(odd) .fas:hover, #portfolio article:nth-child(odd) .far:hover {
+  #portfolio-web article:nth-child(odd) .fab:hover, #portfolio-web article:nth-child(odd) .fas:hover, #portfolio-web article:nth-child(odd) .far:hover {
     color: #0B7C74;
   }
 }
@@ -251,20 +265,21 @@ header nav ul {
 }
 /* ======== Tabbed Navigation ======== */
 .nav-tabs .nav-link {
-  font-family: "Lato", Helvetica, sans-serif !important;
-  font-size: 18px !important;
-  color: #0B232E !important;
-  text-transform: none !important;
+  font-family: "Lato", Helvetica, sans-serif;
+  font-size: 1.25rem !important;
+  color: #0B232E;
+  background-color: transparent !important;
+  text-transform: none;
 }
 .nav-tabs .nav-link:hover {
-  color: #0B7C74 !important;
-  background-color: transparent !important;
+  color: #0B7C74;
+  background-color: transparent;
 }
 
 .nav-link.active {
   color: #0B7C74 !important;
   border-color: #0B7C74 !important;
-  background-color: transparent !important;
+  background-color: transparent;
 }
 
 .nav-item {
@@ -278,125 +293,139 @@ header nav ul {
 }
 
 #ex1-content {
-  width: 100vw;
+  width: 100% !important;
+}
+
+.tab-content {
+  width: 100% !important;
 }
 
 .tab-pane {
-  width: 100vw;
+  width: 100% !important;
   font-family: "Lato", Helvetica, sans-serif;
+}
+
+#portfolio-web {
+  width: 100% !important;
 }
 
 /* ======== Portfolio Section ======== */
 #portfolio {
+  width: 100%;
+}
+
+#portfolio-web {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: 4 1fr;
 }
-#portfolio article {
+#portfolio-web article {
   height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-#portfolio article p {
-  font-weight: 500;
+#portfolio-web article p {
+  font-weight: 400;
   margin: 1.5rem 0;
 }
-#portfolio article ul {
+#portfolio-web article ul {
   list-style-type: none;
   display: flex;
   gap: 1rem;
 }
-#portfolio article ul.technologies {
+#portfolio-web article ul.technologies {
   font-weight: 400;
   margin: 1rem 0;
+  padding-inline: 0;
   justify-self: flex-end;
 }
-#portfolio article ul.icons {
+#portfolio-web article ul.icons {
   margin: 1rem 0;
+  padding-inline: 0;
 }
-#portfolio article ul.icons span {
+#portfolio-web article ul.icons span {
   font-size: 1.5rem;
 }
-#portfolio article:nth-child(even) {
+#portfolio-web article:nth-child(even) {
   background-color: #0B7C74;
   color: #FBFCF5;
   animation: easeIn 2s;
 }
-#portfolio article:nth-child(even) a {
+#portfolio-web article:nth-child(even) a {
   color: #FBFCF5;
 }
-#portfolio article:nth-child(even) a:hover {
+#portfolio-web article:nth-child(even) a:hover {
   color: #23CABE;
 }
-#portfolio article:nth-child(odd) {
+#portfolio-web article:nth-child(odd) {
   background-color: #F0CA68;
 }
-#portfolio article:nth-child(odd) a {
+#portfolio-web article:nth-child(odd) a {
   color: #0B232E;
 }
-#portfolio article:nth-child(odd) a:hover {
+#portfolio-web article:nth-child(odd) a:hover {
   color: #0B7C74;
 }
-#portfolio article:nth-child(odd) ul.icons {
+#portfolio-web article:nth-child(odd) ul.icons {
   color: #0B232E;
 }
-#portfolio article:nth-child(odd) ul.icons li:hover {
+#portfolio-web article:nth-child(odd) ul.icons li:hover {
   color: #0B7C74;
 }
 
 @media screen and (min-width: 1024px) {
-  #portfolio {
+  #portfolio-web {
     grid-template-columns: 2 1fr;
     grid-row-gap: 5rem;
   }
-  #portfolio article {
+  #portfolio-web article {
     width: 50%;
   }
-  #portfolio article div {
+  #portfolio-web article div {
     background-color: #0B232E;
     padding: 1rem;
     width: 100%;
     min-height: 75%;
     position: relative;
   }
-  #portfolio article:nth-child(even) {
+  #portfolio-web article:nth-child(even) {
     background-color: #0B7C74;
     justify-self: flex-end;
   }
-  #portfolio article:nth-child(even) div {
+  #portfolio-web article:nth-child(even) div {
     right: 85%;
   }
-  #portfolio article:nth-child(even) a {
+  #portfolio-web article:nth-child(even) a {
     color: #FBFCF5;
   }
-  #portfolio article:nth-child(even) a:hover {
+  #portfolio-web article:nth-child(even) a:hover {
     color: #23CABE;
   }
-  #portfolio article:nth-child(odd) {
+  #portfolio-web article:nth-child(odd) {
     background-color: #23CABE;
     color: #FBFCF5;
     justify-self: flex-start;
   }
-  #portfolio article:nth-child(odd) div {
+  #portfolio-web article:nth-child(odd) div {
     left: 85%;
   }
-  #portfolio article:nth-child(odd) a {
+  #portfolio-web article:nth-child(odd) a {
     color: #FBFCF5;
   }
-  #portfolio article:nth-child(odd) a:hover {
+  #portfolio-web article:nth-child(odd) a:hover {
     color: #23CABE;
   }
 }
 @media screen and (min-width: 1440px) {
-  #portfolio article div {
+  #portfolio-web article div {
     width: 70%;
     min-height: 80%;
   }
-  #portfolio article:nth-child(even) div {
+  #portfolio-web article:nth-child(even) div {
     right: 45%;
   }
-  #portfolio article:nth-child(odd) div {
+  #portfolio-web article:nth-child(odd) div {
     left: 85%;
   }
 }

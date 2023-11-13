@@ -1,4 +1,9 @@
 // Root Styles
+
+:root {
+  font-family: $body;
+}
+
 ::-moz-selection {
   color: $navy;
   background: $yellowOrange;
@@ -10,7 +15,7 @@
 }
 
 // Typography
-html {
+html, body {
   font-size: 16px;
   font-family: $body;
   color: $navy;
@@ -34,8 +39,17 @@ h2 {
   text-align: center;
 }
 
-h3 {
+h3, h3 > a {
   font-size: 1.25rem;
+  font-family: $body;
+  font-weight: 700;
+  text-decoration: none;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h4 {
+  font-size: 1.1rem;
   font-family: $body;
   font-weight: 700;
   margin-top: 0.5rem;
@@ -49,6 +63,7 @@ article {
 
 a {
   color: $darkTeal;
+  text-decoration: underline;
   &:visited {
     color: $darkTeal;
   }

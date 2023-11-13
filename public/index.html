@@ -14,8 +14,6 @@
     <title>Laur Hawkins | Front-End Web Developer Portfolio</title>
     <meta name="description" content="The professional web developer site of Laura Hawkins.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/reset.css" type="text/css">
-    <link rel="stylesheet" href="./css/style.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
@@ -23,6 +21,8 @@
     <!-- MDB -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet"/>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
+    <link rel="stylesheet" href="./css/reset.css" type="text/css">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -54,7 +54,8 @@
         <!-- Tab Navigation -->
         <ul class="nav nav-tabs nav-justified mb-3" id="portfolio-tabs" role="tablist">
           <li class="nav-item" role="presentation">
-            <a
+            <h3>
+              <a
             class="nav-link active"
             id="ex1-tab-1"
             data-mdb-toggle="tab"
@@ -64,24 +65,28 @@
             aria-selected="true"
             >Web</a
           >
+            </h3>
         </li>
         <li class="nav-item" role="presentation">
-          <a
-            class="nav-link"
-            id="ex1-tab-2"
-            data-mdb-toggle="tab"
-            href="#ex1-tabs-2"
-            role="tab"
-            aria-controls="ex1-tabs-2"
-            aria-selected="false"
-            >Email</a
-          >
+          <h3>
+            <a
+              class="nav-link"
+              id="ex1-tab-2"
+              data-mdb-toggle="tab"
+              href="#portfolio-email"
+              role="tab"
+              aria-controls="portfolio-email"
+              aria-selected="false"
+              >Email</a
+            >
+          </h3>
         </ul>
         <!-- End Tab Navigation -->
 
         <!-- Tab Content -->
-        <div class="tab-content" id="ex1-content">
-          <div
+        <div class="tab-content" id="portfolio">
+          <!-- Web Portfolio -->
+          <section
             class="tab-pane fade show active"
             id="portfolio-web"
             role="tabpanel"
@@ -89,7 +94,7 @@
           >
         <article id="ecommstore">
           <div>
-            <h3>ecommStore</h3>
+            <h4>ecommStore</h4>
             <p>Designed and built a responsive, mobile-first UI, including animations, for a collaborative Ecommerce store project that I completed with three other developers as part of a beta program facilitated by the <a href="https://www.codecademy.com/" target="_blank">Codecademy</a> engineering team.</p>
             <ul class="technologies">
               <li>React</li>
@@ -105,7 +110,7 @@
         </article>
         <article id="stepup">
           <div>
-            <h3>StepUp: Protect Trans Kids</h3>
+            <h4>StepUp: Protect Trans Kids</h4>
             <p>Designed and built new website on a tight deadline for a civil rights nonprofit, after original website was taken down by its developer, making its CMS inaccessible. Created hierarchy with calls to action and modified color palette to make WCAG-compliant.</p>
             <ul class="technologies">
               <li>Squarespace</li>
@@ -119,7 +124,7 @@
         </article>
         <article id="spacestagram">
           <div>
-            <h3>Spacestagram</h3>
+            <h4>Spacestagram</h4>
             <p>This Instagram clone populates a feed with five random images from NASA’s Photo of the Day API. It features a functioning, animated “like” button and Instagram-style date formatting.</p>
             <ul class="technologies">
               <li>React</li>
@@ -134,7 +139,7 @@
         </article>
         <article id="songcrush">
             <div>
-            <h3>SongCrush</h3>
+            <h4>SongCrush</h4>
             <p>Using <a href="https://spotify.com" target="_blank">Spotify</a> login authorization, this single-page app allows users to create and save playlists to a Spotify account.</p>
             <ul class="technologies">
               <li>React</li>
@@ -149,7 +154,7 @@
         </article>
         <article id="prssa">
           <div>
-            <h3>PRSSA</h3>
+            <h4>PRSSA</h4>
             <p>I migrated this website from WordPress to Sitefinity, implementing provided CSS classes and JavaScript widgets and creating new CSS styles as needed.</p>
             <ul class="technologies">
               <li>HTML</li>
@@ -161,8 +166,18 @@
             </ul>
           </div>
         </article>
-      </div>
       </section>
+      <!-- Email Portfolio -->
+      <section
+        class="tab-pane fade show active"
+        id="portfolio-email"
+        role="tabpanel"
+        aria-labelledby="portfolio-email"
+      >
+
+      </section>
+    </div>
+  </section>
       <section id="contact">
         <article class="blurb">
           <h2>Get In Touch</h2>

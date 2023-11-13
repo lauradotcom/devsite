@@ -111,20 +111,21 @@ header {
 /* ======== Tabbed Navigation ======== */
 
 .nav-tabs .nav-link {
-  font-family: $body !important;
-  font-size: 18px !important;
-  color: $navy !important;
-  text-transform: none !important;
+  font-family: $body;
+  font-size: 1.25rem !important;
+  color: $navy;
+  background-color: transparent !important;
+  text-transform: none;
   &:hover {
-    color: $darkTeal !important;
-    background-color: transparent !important;
+    color: $darkTeal;
+    background-color: transparent;
   }
 }
 
 .nav-link.active {
   color: $darkTeal !important;
   border-color: $darkTeal !important;
-  background-color: transparent !important;
+  background-color: transparent;
 }
 
 .nav-item {
@@ -138,11 +139,20 @@ header {
 }
 
 #ex1-content{
-  width:100vw;}
+  width: 100% !important;}
+
+.tab-content {
+  width: 100% !important;
+
+}
 
 .tab-pane {
-  width: 100vw;
+  width: 100% !important;
   font-family: $body;
+}
+
+#portfolio-web {
+  width: 100% !important;
 }
 
 /* ======== Portfolio Section ======== */
@@ -150,6 +160,10 @@ header {
 // Mobile
 
 #portfolio {
+  width: 100%;
+}
+
+#portfolio-web {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: 4(1fr);
@@ -159,7 +173,7 @@ header {
     flex-direction: column;
     justify-content: space-around;
     p {
-      font-weight: 500;
+      font-weight: 400;
       margin: 1.5rem 0;
     }
     ul {
@@ -170,10 +184,12 @@ header {
     ul.technologies {
       font-weight: 400;
       margin: 1rem 0;
+      padding-inline: 0;
       justify-self: flex-end;
     }
     ul.icons {
       margin: 1rem 0;
+      padding-inline: 0;
       span {
         font-size: 1.5rem;
       }
@@ -210,7 +226,7 @@ header {
 // Laptop
 
 @media screen and (min-width: $laptop) {
-  #portfolio {
+  #portfolio-web {
     grid-template-columns: 2(1fr);
     grid-row-gap: 5rem;
     article {
@@ -256,7 +272,7 @@ header {
 // Desktop
 
 @media screen and (min-width: $desktop) {
-  #portfolio {
+  #portfolio-web {
     article {
       div {
         width: 70%;

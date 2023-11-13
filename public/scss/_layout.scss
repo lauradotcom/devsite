@@ -113,21 +113,24 @@ header {
 .nav-tabs .nav-link {
   font-family: $body !important;
   font-size: 18px !important;
-  color: $navy;
+  color: $navy !important;
   text-transform: none !important;
+  &:hover {
+    color: $darkTeal !important;
+    background-color: transparent !important;
+  }
 }
 
 .nav-link.active {
   color: $darkTeal !important;
   border-color: $darkTeal !important;
+  background-color: transparent !important;
 }
 
 .nav-item {
   font-family: $body;
   color: $darkTeal;
 }
-
-
 
 .active {
   color: $darkTeal;

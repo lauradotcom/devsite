@@ -1,4 +1,14 @@
 /* ========= Variables ========== */
+::-moz-selection {
+  color: #0B232E;
+  background: #F0CA68;
+}
+
+::selection {
+  color: #0B232E;
+  background: #F0CA68;
+}
+
 html {
   font-size: 16px;
   font-family: "Lato", Helvetica, sans-serif;

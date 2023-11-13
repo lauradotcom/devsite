@@ -1,3 +1,14 @@
+// Root Styles
+::-moz-selection {
+  color: $navy;
+  background: $yellowOrange;
+}
+
+::selection {
+  color:$navy;
+  background: $yellowOrange;
+}
+
 // Typography
 html {
   font-size: 16px;

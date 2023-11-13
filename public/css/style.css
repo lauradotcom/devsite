@@ -1,4 +1,14 @@
 /* ========= Variables ========== */
+::-moz-selection {
+  color: #0B232E;
+  background: #F0CA68;
+}
+
+::selection {
+  color: #0B232E;
+  background: #F0CA68;
+}
+
 html {
   font-size: 16px;
   font-family: "Lato", Helvetica, sans-serif;
@@ -8,11 +18,6 @@ html {
   scroll-behavior: smooth;
 }
 
-@media screen and (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-}
 h1 {
   font-size: 1.75rem;
   font-family: "Arvo", serif;
@@ -41,6 +46,13 @@ article {
   padding: 2rem;
 }
 
+a {
+  color: #0B7C74;
+}
+a:visited {
+  color: #0B7C74;
+}
+
 @media screen and (min-width: 1024px) {
   html {
     font-size: 18px;
@@ -53,6 +65,11 @@ article {
   h2 {
     font-size: 1.75rem;
     margin-bottom: 1.085rem;
+  }
+}
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 }
 /* ======== Buttons ======== */
@@ -239,7 +256,7 @@ header nav ul {
   grid-template-rows: 4 1fr;
 }
 #portfolio article {
-  height: 50vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -269,8 +286,20 @@ header nav ul {
   color: #FBFCF5;
   animation: easeIn 2s;
 }
+#portfolio article:nth-child(even) a {
+  color: #FBFCF5;
+}
+#portfolio article:nth-child(even) a:hover {
+  color: #23CABE;
+}
 #portfolio article:nth-child(odd) {
   background-color: #F0CA68;
+}
+#portfolio article:nth-child(odd) a {
+  color: #0B232E;
+}
+#portfolio article:nth-child(odd) a:hover {
+  color: #0B7C74;
 }
 #portfolio article:nth-child(odd) ul.icons {
   color: #0B232E;
@@ -301,6 +330,12 @@ header nav ul {
   #portfolio article:nth-child(even) div {
     right: 85%;
   }
+  #portfolio article:nth-child(even) a {
+    color: #FBFCF5;
+  }
+  #portfolio article:nth-child(even) a:hover {
+    color: #23CABE;
+  }
   #portfolio article:nth-child(odd) {
     background-color: #23CABE;
     color: #FBFCF5;
@@ -308,6 +343,12 @@ header nav ul {
   }
   #portfolio article:nth-child(odd) div {
     left: 85%;
+  }
+  #portfolio article:nth-child(odd) a {
+    color: #FBFCF5;
+  }
+  #portfolio article:nth-child(odd) a:hover {
+    color: #23CABE;
   }
 }
 @media screen and (min-width: 1440px) {

@@ -154,11 +154,11 @@ form div#status-message {
   color: #23CABE;
 }
 
-@media screen and (max-width: 1024px) {
-  #portfolio-web article:nth-child(odd) .fab, #portfolio-web article:nth-child(odd) .fas, #portfolio-web article:nth-child(odd) .far {
+@media screen and (max-width: 1023px) {
+  #portfolio-web article:nth-child(even) .fab, #portfolio-web article:nth-child(even) .fas, #portfolio-web article:nth-child(even) .far {
     color: #0B232E;
   }
-  #portfolio-web article:nth-child(odd) .fab:hover, #portfolio-web article:nth-child(odd) .fas:hover, #portfolio-web article:nth-child(odd) .far:hover {
+  #portfolio-web article:nth-child(even) .fab:hover, #portfolio-web article:nth-child(even) .fas:hover, #portfolio-web article:nth-child(even) .far:hover {
     color: #0B7C74;
   }
 }
@@ -287,11 +287,6 @@ header nav ul {
   color: #0B7C74;
 }
 
-.active {
-  color: #0B7C74;
-  border: #0B7C74;
-}
-
 #ex1-content {
   width: 100% !important;
 }
@@ -303,10 +298,6 @@ header nav ul {
 .tab-pane {
   width: 100% !important;
   font-family: "Lato", Helvetica, sans-serif;
-}
-
-#portfolio-web {
-  width: 100% !important;
 }
 
 /* ======== Portfolio Section ======== */
@@ -347,30 +338,38 @@ header nav ul {
 #portfolio-web article ul.icons span {
   font-size: 1.5rem;
 }
-#portfolio-web article:nth-child(even) {
+#portfolio-web article:nth-child(odd) {
   background-color: #0B7C74;
   color: #FBFCF5;
   animation: easeIn 2s;
-}
-#portfolio-web article:nth-child(even) a {
   color: #FBFCF5;
 }
-#portfolio-web article:nth-child(even) a:hover {
-  color: #23CABE;
-}
-#portfolio-web article:nth-child(odd) {
-  background-color: #F0CA68;
-}
 #portfolio-web article:nth-child(odd) a {
-  color: #0B232E;
+  color: #FBFCF5;
 }
 #portfolio-web article:nth-child(odd) a:hover {
-  color: #0B7C74;
+  color: #23CABE;
 }
 #portfolio-web article:nth-child(odd) ul.icons {
-  color: #0B232E;
+  color: #FBFCF5;
 }
 #portfolio-web article:nth-child(odd) ul.icons li:hover {
+  color: #23CABE;
+}
+#portfolio-web article:nth-child(even) {
+  background-color: #F0CA68;
+  color: #0B232E;
+}
+#portfolio-web article:nth-child(even) a {
+  color: #0B232E;
+}
+#portfolio-web article:nth-child(even) a:hover {
+  color: #0B7C74;
+}
+#portfolio-web article:nth-child(even) ul.icons {
+  color: #0B232E;
+}
+#portfolio-web article:nth-child(even) ul.icons li:hover {
   color: #0B7C74;
 }
 
@@ -384,6 +383,7 @@ header nav ul {
   }
   #portfolio-web article div {
     background-color: #0B232E;
+    color: #FBFCF5;
     padding: 1rem;
     width: 100%;
     min-height: 75%;

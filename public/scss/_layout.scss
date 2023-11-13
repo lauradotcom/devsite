@@ -133,26 +133,16 @@ header {
   color: $darkTeal;
 }
 
-.active {
-  color: $darkTeal;
-  border: $darkTeal;
-}
-
 #ex1-content{
   width: 100% !important;}
 
 .tab-content {
   width: 100% !important;
-
 }
 
 .tab-pane {
   width: 100% !important;
   font-family: $body;
-}
-
-#portfolio-web {
-  width: 100% !important;
 }
 
 /* ======== Portfolio Section ======== */
@@ -194,19 +184,27 @@ header {
         font-size: 1.5rem;
       }
     }
-    &:nth-child(even) {
+    &:nth-child(odd) {
       background-color: $darkTeal;
       color: $offWhite;
       animation: easeIn 2s;
-        a {
-          color: $offWhite;
-              &:hover {
-                color:$lightTeal;
-              }
+      color: $offWhite;     
+      a {
+        color: $offWhite;
+            &:hover {
+              color:$lightTeal;
+            }
+          }
+      ul.icons {
+        color: $offWhite;
+        li:hover {
+          color: $lightTeal;
         }
       }
-    &:nth-child(odd) {
+      }
+    &:nth-child(even) {
       background-color: $yellowOrange;
+      color: $navy;
       a {
         color: $navy;
           &:hover {
@@ -233,6 +231,7 @@ header {
       width: 50%;
       div {
         background-color: $navy;
+        color: $offWhite;
         padding: 1rem;
         width: 100%;
         min-height: 75%;

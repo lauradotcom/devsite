@@ -76,10 +76,10 @@ form {
 }
 
 // Portfolio Mobile
-@media screen and (max-width: $laptop) {
+@media screen and (max-width: 1023px) {
   #portfolio-web {
     article {
-      &:nth-child(odd) {
+      &:nth-child(even) {
         .fab, .fas, .far {
           color: $navy;
           &:hover {

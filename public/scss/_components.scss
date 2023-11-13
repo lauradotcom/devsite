@@ -76,7 +76,7 @@ form {
 }
 
 // Portfolio Mobile
-@media screen and (max-width: $laptop - 1) {
+@media screen and (max-width: $laptop) {
   #portfolio {
     article {
       &:nth-child(odd) {

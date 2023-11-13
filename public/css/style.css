@@ -123,7 +123,7 @@ form div#status-message {
   color: #23CABE;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1024px) {
   #portfolio article:nth-child(odd) .fab, #portfolio article:nth-child(odd) .fas, #portfolio article:nth-child(odd) .far {
     color: #0B232E;
   }

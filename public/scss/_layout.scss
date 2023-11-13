@@ -145,9 +145,21 @@ header {
       background-color: $darkTeal;
       color: $offWhite;
       animation: easeIn 2s;
-    }
+        a {
+          color: $offWhite;
+              &:hover {
+                color:$lightTeal;
+              }
+        }
+      }
     &:nth-child(odd) {
       background-color: $yellowOrange;
+      a {
+        color: $navy;
+          &:hover {
+            color:$darkTeal;
+          }
+      }
       ul.icons {
         color: $navy;
         li:hover {
@@ -178,6 +190,12 @@ header {
         justify-self: flex-end;
         div {
           right: 85%;
+        }      
+        a {
+          color: $offWhite;
+              &:hover {
+                color:$lightTeal;
+              }
         }
       }
       &:nth-child(odd) {
@@ -186,6 +204,12 @@ header {
         justify-self: flex-start;
         div {
           left: 85%;
+        }
+        a {
+          color: $offWhite;
+              &:hover {
+                color:$lightTeal;
+              }
         }
       }
     }
@@ -395,8 +419,6 @@ body.resume {
     }
   }
 }
-
-
 
 #contact-detail {
   color: $yellowOrange;

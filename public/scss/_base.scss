@@ -8,13 +8,6 @@ html {
   scroll-behavior: smooth;
 }
 
-// Disable smooth scrolling for users who prefer reduced motion
-@media screen and (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-}
-
 h1 {
   font-size: 1.75rem;
   font-family: $headings;
@@ -43,6 +36,13 @@ article {
   padding: 2rem;
 }
 
+a {
+  color: $darkTeal;
+  &:visited {
+    color: $darkTeal;
+  }
+}
+
 // Desktop Styles
 
 @media screen and (min-width: $laptop) {
@@ -55,5 +55,12 @@ article {
   h2 {
     font-size: 1.75rem;
     margin-bottom: 1.085rem;
+  }
+}
+
+// Disable smooth scrolling for users who prefer reduced motion
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 }

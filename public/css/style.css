@@ -315,117 +315,117 @@ header nav ul {
   width: 100%;
 }
 
-#portfolio-web {
+#portfolio-web section {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: 4 1fr;
 }
-#portfolio-web article {
+#portfolio-web section article {
   height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-#portfolio-web article p {
+#portfolio-web section article p {
   font-weight: 400;
   margin: 1.5rem 0;
 }
-#portfolio-web article ul {
+#portfolio-web section article ul {
   list-style-type: none;
   display: flex;
   gap: 1rem;
 }
-#portfolio-web article ul.technologies {
+#portfolio-web section article ul.technologies {
   font-weight: 400;
   margin: 1rem 0;
   padding-inline: 0;
   justify-self: flex-end;
 }
-#portfolio-web article ul.icons {
+#portfolio-web section article ul.icons {
   margin: 1rem 0;
   padding-inline: 0;
 }
-#portfolio-web article ul.icons span {
+#portfolio-web section article ul.icons span {
   font-size: 1.5rem;
 }
-#portfolio-web article:nth-child(odd) {
+#portfolio-web section article:nth-child(odd) {
   background-color: #0B7C74;
   color: #FBFCF5;
   animation: easeIn 2s;
   color: #FBFCF5;
 }
-#portfolio-web article:nth-child(odd) a {
+#portfolio-web section article:nth-child(odd) a {
   color: #FBFCF5;
 }
-#portfolio-web article:nth-child(odd) a:hover {
+#portfolio-web section article:nth-child(odd) a:hover {
   color: #23CABE;
 }
-#portfolio-web article:nth-child(odd) ul.icons {
+#portfolio-web section article:nth-child(odd) ul.icons {
   color: #FBFCF5;
 }
-#portfolio-web article:nth-child(odd) ul.icons li:hover {
+#portfolio-web section article:nth-child(odd) ul.icons li:hover {
   color: #23CABE;
 }
-#portfolio-web article:nth-child(even) {
+#portfolio-web section article:nth-child(even) {
   background-color: #F0CA68;
   color: #0B232E;
 }
-#portfolio-web article:nth-child(even) a {
+#portfolio-web section article:nth-child(even) a {
   color: #0B232E;
 }
-#portfolio-web article:nth-child(even) a:hover {
+#portfolio-web section article:nth-child(even) a:hover {
   color: #0B7C74;
 }
-#portfolio-web article:nth-child(even) ul.icons {
+#portfolio-web section article:nth-child(even) ul.icons {
   color: #0B232E;
 }
-#portfolio-web article:nth-child(even) ul.icons li:hover {
+#portfolio-web section article:nth-child(even) ul.icons li:hover {
   color: #0B7C74;
 }
 
-#portfolio-email {
+#portfolio-email section {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: 4 1fr;
 }
-#portfolio-email article {
+#portfolio-email section article {
   height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-#portfolio-email article p {
+#portfolio-email section article p {
   font-weight: 400;
   margin: 1.5rem 0;
 }
-#portfolio-email article ul {
+#portfolio-email section article ul {
   list-style-type: none;
   display: flex;
   gap: 1rem;
 }
-#portfolio-email article ul.technologies {
+#portfolio-email section article ul.technologies {
   font-weight: 400;
   margin: 1rem 0;
   padding-inline: 0;
   justify-self: flex-end;
 }
-#portfolio-email article ul.icons {
+#portfolio-email section article ul.icons {
   margin: 1rem 0;
   padding-inline: 0;
 }
-#portfolio-email article ul.icons span {
+#portfolio-email section article ul.icons span {
   font-size: 1.5rem;
 }
 
 @media screen and (min-width: 1024px) {
-  #portfolio-web {
+  #portfolio-web section {
     grid-template-columns: 2 1fr;
     grid-row-gap: 5rem;
   }
-  #portfolio-web article {
+  #portfolio-web section article {
     width: 50%;
   }
-  #portfolio-web article div {
+  #portfolio-web section article div {
     background-color: #0B232E;
     color: #FBFCF5;
     padding: 1rem;
@@ -433,42 +433,42 @@ header nav ul {
     min-height: 75%;
     position: relative;
   }
-  #portfolio-web article:nth-child(even) {
+  #portfolio-web section article:nth-child(even) {
     background-color: #0B7C74;
     justify-self: flex-end;
   }
-  #portfolio-web article:nth-child(even) div {
+  #portfolio-web section article:nth-child(even) div {
     right: 85%;
   }
-  #portfolio-web article:nth-child(even) a {
+  #portfolio-web section article:nth-child(even) a {
     color: #FBFCF5;
   }
-  #portfolio-web article:nth-child(even) a:hover {
+  #portfolio-web section article:nth-child(even) a:hover {
     color: #23CABE;
   }
-  #portfolio-web article:nth-child(odd) {
+  #portfolio-web section article:nth-child(odd) {
     background-color: #23CABE;
     color: #FBFCF5;
     justify-self: flex-start;
   }
-  #portfolio-web article:nth-child(odd) div {
+  #portfolio-web section article:nth-child(odd) div {
     left: 85%;
   }
-  #portfolio-web article:nth-child(odd) a {
+  #portfolio-web section article:nth-child(odd) a {
     color: #FBFCF5;
   }
-  #portfolio-web article:nth-child(odd) a:hover {
+  #portfolio-web section article:nth-child(odd) a:hover {
     color: #23CABE;
   }
 
-  #portfolio-email {
-    grid-template-columns: 2 1fr;
+  #portfolio-email section {
+    grid-template-columns: 3 1fr;
     grid-row-gap: 5rem;
   }
-  #portfolio-email article {
+  #portfolio-email section article {
     width: 50%;
   }
-  #portfolio-email article div {
+  #portfolio-email section article div {
     background-color: #0B232E;
     color: #FBFCF5;
     padding: 1rem;
@@ -476,54 +476,54 @@ header nav ul {
     min-height: 75%;
     position: relative;
   }
-  #portfolio-email article:nth-child(even) {
+  #portfolio-email section article:nth-child(even) {
     background-color: #0B7C74;
     justify-self: flex-end;
   }
-  #portfolio-email article:nth-child(even) div {
+  #portfolio-email section article:nth-child(even) div {
     right: 85%;
   }
-  #portfolio-email article:nth-child(even) a {
+  #portfolio-email section article:nth-child(even) a {
     color: #FBFCF5;
   }
-  #portfolio-email article:nth-child(even) a:hover {
+  #portfolio-email section article:nth-child(even) a:hover {
     color: #23CABE;
   }
-  #portfolio-email article:nth-child(odd) {
+  #portfolio-email section article:nth-child(odd) {
     background-color: #23CABE;
     color: #FBFCF5;
     justify-self: flex-start;
   }
-  #portfolio-email article:nth-child(odd) div {
+  #portfolio-email section article:nth-child(odd) div {
     left: 85%;
   }
-  #portfolio-email article:nth-child(odd) a {
+  #portfolio-email section article:nth-child(odd) a {
     color: #FBFCF5;
   }
-  #portfolio-email article:nth-child(odd) a:hover {
+  #portfolio-email section article:nth-child(odd) a:hover {
     color: #23CABE;
   }
 }
 @media screen and (min-width: 1440px) {
-  #portfolio-web article div {
+  #portfolio-web section article div {
     width: 70%;
     min-height: 80%;
   }
-  #portfolio-web article:nth-child(even) div {
+  #portfolio-web section article:nth-child(even) div {
     right: 45%;
   }
-  #portfolio-web article:nth-child(odd) div {
+  #portfolio-web section article:nth-child(odd) div {
     left: 85%;
   }
 
-  #portfolio-email article div {
+  #portfolio-email section article div {
     width: 70%;
     min-height: 80%;
   }
-  #portfolio-email article:nth-child(even) div {
+  #portfolio-email section article:nth-child(even) div {
     right: 45%;
   }
-  #portfolio-email article:nth-child(odd) div {
+  #portfolio-email section article:nth-child(odd) div {
     left: 85%;
   }
 }

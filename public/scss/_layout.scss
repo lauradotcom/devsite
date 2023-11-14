@@ -154,67 +154,69 @@ header {
 }
 
 #portfolio-web {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 4(1fr);
-  article {
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    p {
-      font-weight: 400;
-      margin: 1.5rem 0;
-    }
-    ul {
-      list-style-type: none;
+  section {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 4(1fr);
+    article {
+      height: 60vh;
       display: flex;
-      gap: 1rem;
-    }
-    ul.technologies {
-      font-weight: 400;
-      margin: 1rem 0;
-      padding-inline: 0;
-      justify-self: flex-end;
-    }
-    ul.icons {
-      margin: 1rem 0;
-      padding-inline: 0;
-      span {
-        font-size: 1.5rem;
+      flex-direction: column;
+      justify-content: space-around;
+      p {
+        font-weight: 400;
+        margin: 1.5rem 0;
       }
-    }
-    &:nth-child(odd) {
-      background-color: $darkTeal;
-      color: $offWhite;
-      animation: easeIn 2s;
-      color: $offWhite;     
-      a {
-        color: $offWhite;
-            &:hover {
-              color:$lightTeal;
-            }
-          }
+      ul {
+        list-style-type: none;
+        display: flex;
+        gap: 1rem;
+      }
+      ul.technologies {
+        font-weight: 400;
+        margin: 1rem 0;
+        padding-inline: 0;
+        justify-self: flex-end;
+      }
       ul.icons {
-        color: $offWhite;
-        li:hover {
-          color: $lightTeal;
+        margin: 1rem 0;
+        padding-inline: 0;
+        span {
+          font-size: 1.5rem;
         }
       }
-      }
-    &:nth-child(even) {
-      background-color: $yellowOrange;
-      color: $navy;
-      a {
-        color: $navy;
-          &:hover {
-            color:$darkTeal;
+      &:nth-child(odd) {
+        background-color: $darkTeal;
+        color: $offWhite;
+        animation: easeIn 2s;
+        color: $offWhite;     
+        a {
+          color: $offWhite;
+              &:hover {
+                color:$lightTeal;
+              }
           }
+        ul.icons {
+          color: $offWhite;
+          li:hover {
+            color: $lightTeal;
+          }
+        }
       }
-      ul.icons {
+      &:nth-child(even) {
+        background-color: $yellowOrange;
         color: $navy;
-        li:hover {
-          color: $darkTeal;
+        a {
+          color: $navy;
+            &:hover {
+              color:$darkTeal;
+            }
+        }
+        ul.icons {
+          color: $navy;
+          li:hover {
+            color: $darkTeal;
+          }
         }
       }
     }
@@ -222,34 +224,36 @@ header {
 }
 
 #portfolio-email {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 4(1fr);
-  article {
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    p {
-      font-weight: 400;
-      margin: 1.5rem 0;
-    }
-    ul {
-      list-style-type: none;
+  section {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 4(1fr);
+    article {
+      height: 60vh;
       display: flex;
-      gap: 1rem;
-    }
-    ul.technologies {
-      font-weight: 400;
-      margin: 1rem 0;
-      padding-inline: 0;
-      justify-self: flex-end;
-    }
-    ul.icons {
-      margin: 1rem 0;
-      padding-inline: 0;
-      span {
-        font-size: 1.5rem;
+      flex-direction: column;
+      justify-content: space-around;
+      p {
+        font-weight: 400;
+        margin: 1.5rem 0;
+      }
+      ul {
+        list-style-type: none;
+        display: flex;
+        gap: 1rem;
+      }
+      ul.technologies {
+        font-weight: 400;
+        margin: 1rem 0;
+        padding-inline: 0;
+        justify-self: flex-end;
+      }
+      ul.icons {
+        margin: 1rem 0;
+        padding-inline: 0;
+        span {
+          font-size: 1.5rem;
+        }
       }
     }
   }
@@ -259,86 +263,90 @@ header {
 
 @media screen and (min-width: $laptop) {
   #portfolio-web {
-    grid-template-columns: 2(1fr);
-    grid-row-gap: 5rem;
-    article {
-      width: 50%;
-      div {
-        background-color: $navy;
-        color: $offWhite;
-        padding: 1rem;
-        width: 100%;
-        min-height: 75%;
-        position: relative;
-      }
-      &:nth-child(even) {
-        background-color: $darkTeal;
-        justify-self: flex-end;
+    section {
+      grid-template-columns: 2(1fr);
+      grid-row-gap: 5rem;
+      article {
+        width: 50%;
         div {
-          right: 85%;
-        }      
-        a {
+          background-color: $navy;
           color: $offWhite;
-              &:hover {
-                color:$lightTeal;
-              }
+          padding: 1rem;
+          width: 100%;
+          min-height: 75%;
+          position: relative;
         }
-      }
-      &:nth-child(odd) {
-        background-color: $lightTeal;
-        color: $offWhite;
-        justify-self: flex-start;
-        div {
-          left: 85%;
+        &:nth-child(even) {
+          background-color: $darkTeal;
+          justify-self: flex-end;
+          div {
+            right: 85%;
+          }      
+          a {
+            color: $offWhite;
+                &:hover {
+                  color:$lightTeal;
+                }
+          }
         }
-        a {
+        &:nth-child(odd) {
+          background-color: $lightTeal;
           color: $offWhite;
-              &:hover {
-                color:$lightTeal;
-              }
+          justify-self: flex-start;
+          div {
+            left: 85%;
+          }
+          a {
+            color: $offWhite;
+                &:hover {
+                  color:$lightTeal;
+                }
+          }
         }
       }
     }
   }
 
   #portfolio-email {
-    grid-template-columns: 2(1fr);
-    grid-row-gap: 5rem;
-    article {
-      width: 50%;
-      div {
-        background-color: $navy;
-        color: $offWhite;
-        padding: 1rem;
-        width: 100%;
-        min-height: 75%;
-        position: relative;
-      }
-      &:nth-child(even) {
-        background-color: $darkTeal;
-        justify-self: flex-end;
+    section {
+      grid-template-columns: 3(1fr);
+      grid-row-gap: 5rem;
+      article {
+        width: 50%;
         div {
-          right: 85%;
-        }      
-        a {
+          background-color: $navy;
           color: $offWhite;
-              &:hover {
-                color:$lightTeal;
-              }
+          padding: 1rem;
+          width: 100%;
+          min-height: 75%;
+          position: relative;
         }
-      }
-      &:nth-child(odd) {
-        background-color: $lightTeal;
-        color: $offWhite;
-        justify-self: flex-start;
-        div {
-          left: 85%;
+        &:nth-child(even) {
+          background-color: $darkTeal;
+          justify-self: flex-end;
+          div {
+            right: 85%;
+          }      
+          a {
+            color: $offWhite;
+                &:hover {
+                  color:$lightTeal;
+                }
+          }
         }
-        a {
+        &:nth-child(odd) {
+          background-color: $lightTeal;
           color: $offWhite;
-              &:hover {
-                color:$lightTeal;
-              }
+          justify-self: flex-start;
+          div {
+            left: 85%;
+          }
+          a {
+            color: $offWhite;
+                &:hover {
+                  color:$lightTeal;
+                }
+          }
         }
       }
     }
@@ -349,38 +357,42 @@ header {
 
 @media screen and (min-width: $desktop) {
   #portfolio-web {
-    article {
-      div {
-        width: 70%;
-        min-height: 80%;
-      }
-      &:nth-child(even) {
+    section {
+      article {
         div {
-          right: 45%;
+          width: 70%;
+          min-height: 80%;
         }
-      }
-      &:nth-child(odd) {
-        div {
-          left: 85%;
+        &:nth-child(even) {
+          div {
+            right: 45%;
+          }
+        }
+        &:nth-child(odd) {
+          div {
+            left: 85%;
+          }
         }
       }
     }
   }
 
   #portfolio-email {
-    article {
-      div {
-        width: 70%;
-        min-height: 80%;
-      }
-      &:nth-child(even) {
+    section {
+      article {
         div {
-          right: 45%;
+          width: 70%;
+          min-height: 80%;
         }
-      }
-      &:nth-child(odd) {
-        div {
-          left: 85%;
+        &:nth-child(even) {
+          div {
+            right: 45%;
+          }
+        }
+        &:nth-child(odd) {
+          div {
+            left: 85%;
+          }
         }
       }
     }

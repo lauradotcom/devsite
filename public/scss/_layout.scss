@@ -122,7 +122,7 @@ header {
   }
 }
 
-.nav-link.active {
+.nav-link.active, nav-link.active > span {
   color: $darkTeal !important;
   border-color: $darkTeal !important;
   background-color: transparent;

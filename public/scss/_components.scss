@@ -75,6 +75,18 @@ form {
   }
 }
 
+// Tabs 
+
+.fa-fw.me-2 {
+  color: inherit;
+  &:hover {
+    color: inherit;
+  }
+  &:active {
+    color: inherit;
+  }
+}
+
 // Portfolio Mobile
 @media screen and (max-width: 1023px) {
   #portfolio-web {

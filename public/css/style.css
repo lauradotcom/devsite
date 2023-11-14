@@ -460,6 +460,49 @@ header nav ul {
   #portfolio-web article:nth-child(odd) a:hover {
     color: #23CABE;
   }
+
+  #portfolio-email {
+    grid-template-columns: 2 1fr;
+    grid-row-gap: 5rem;
+  }
+  #portfolio-email article {
+    width: 50%;
+  }
+  #portfolio-email article div {
+    background-color: #0B232E;
+    color: #FBFCF5;
+    padding: 1rem;
+    width: 100%;
+    min-height: 75%;
+    position: relative;
+  }
+  #portfolio-email article:nth-child(even) {
+    background-color: #0B7C74;
+    justify-self: flex-end;
+  }
+  #portfolio-email article:nth-child(even) div {
+    right: 85%;
+  }
+  #portfolio-email article:nth-child(even) a {
+    color: #FBFCF5;
+  }
+  #portfolio-email article:nth-child(even) a:hover {
+    color: #23CABE;
+  }
+  #portfolio-email article:nth-child(odd) {
+    background-color: #23CABE;
+    color: #FBFCF5;
+    justify-self: flex-start;
+  }
+  #portfolio-email article:nth-child(odd) div {
+    left: 85%;
+  }
+  #portfolio-email article:nth-child(odd) a {
+    color: #FBFCF5;
+  }
+  #portfolio-email article:nth-child(odd) a:hover {
+    color: #23CABE;
+  }
 }
 @media screen and (min-width: 1440px) {
   #portfolio-web article div {
@@ -470,6 +513,17 @@ header nav ul {
     right: 45%;
   }
   #portfolio-web article:nth-child(odd) div {
+    left: 85%;
+  }
+
+  #portfolio-email article div {
+    width: 70%;
+    min-height: 80%;
+  }
+  #portfolio-email article:nth-child(even) div {
+    right: 45%;
+  }
+  #portfolio-email article:nth-child(odd) div {
     left: 85%;
   }
 }
@@ -500,6 +554,12 @@ header nav ul {
 
 #prssa {
   background-image: linear-gradient(rgba(11, 124, 116, 0.9), rgba(11, 124, 116, 0.9)), url("../images/PRSSA-Mobile.jpg");
+  background-size: cover;
+  background-position: top;
+}
+
+#email-1 {
+  background-image: url("../images/Oct2023NLMobile.jpg");
   background-size: cover;
   background-position: top;
 }

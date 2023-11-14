@@ -300,12 +300,74 @@ header {
       }
     }
   }
+
+  #portfolio-email {
+    grid-template-columns: 2(1fr);
+    grid-row-gap: 5rem;
+    article {
+      width: 50%;
+      div {
+        background-color: $navy;
+        color: $offWhite;
+        padding: 1rem;
+        width: 100%;
+        min-height: 75%;
+        position: relative;
+      }
+      &:nth-child(even) {
+        background-color: $darkTeal;
+        justify-self: flex-end;
+        div {
+          right: 85%;
+        }      
+        a {
+          color: $offWhite;
+              &:hover {
+                color:$lightTeal;
+              }
+        }
+      }
+      &:nth-child(odd) {
+        background-color: $lightTeal;
+        color: $offWhite;
+        justify-self: flex-start;
+        div {
+          left: 85%;
+        }
+        a {
+          color: $offWhite;
+              &:hover {
+                color:$lightTeal;
+              }
+        }
+      }
+    }
+  }
 }
 
 // Desktop
 
 @media screen and (min-width: $desktop) {
   #portfolio-web {
+    article {
+      div {
+        width: 70%;
+        min-height: 80%;
+      }
+      &:nth-child(even) {
+        div {
+          right: 45%;
+        }
+      }
+      &:nth-child(odd) {
+        div {
+          left: 85%;
+        }
+      }
+    }
+  }
+
+  #portfolio-email {
     article {
       div {
         width: 70%;
@@ -354,6 +416,12 @@ header {
 
 #prssa {
   background-image: linear-gradient($darkTealOverlay, $darkTealOverlay), url('../images/PRSSA-Mobile.jpg');
+  background-size: cover;
+  background-position: top;
+}
+
+#email-1 {
+  background-image: url('../images/Oct2023NLMobile.jpg');
   background-size: cover;
   background-position: top;
 }

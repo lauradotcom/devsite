@@ -383,6 +383,40 @@ header nav ul {
   color: #0B7C74;
 }
 
+#portfolio-email {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 4 1fr;
+}
+#portfolio-email article {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#portfolio-email article p {
+  font-weight: 400;
+  margin: 1.5rem 0;
+}
+#portfolio-email article ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+#portfolio-email article ul.technologies {
+  font-weight: 400;
+  margin: 1rem 0;
+  padding-inline: 0;
+  justify-self: flex-end;
+}
+#portfolio-email article ul.icons {
+  margin: 1rem 0;
+  padding-inline: 0;
+}
+#portfolio-email article ul.icons span {
+  font-size: 1.5rem;
+}
+
 @media screen and (min-width: 1024px) {
   #portfolio-web {
     grid-template-columns: 2 1fr;

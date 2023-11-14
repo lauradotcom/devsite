@@ -221,6 +221,40 @@ header {
   }
 }
 
+#portfolio-email {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 4(1fr);
+  article {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    p {
+      font-weight: 400;
+      margin: 1.5rem 0;
+    }
+    ul {
+      list-style-type: none;
+      display: flex;
+      gap: 1rem;
+    }
+    ul.technologies {
+      font-weight: 400;
+      margin: 1rem 0;
+      padding-inline: 0;
+      justify-self: flex-end;
+    }
+    ul.icons {
+      margin: 1rem 0;
+      padding-inline: 0;
+      span {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
 // Laptop
 
 @media screen and (min-width: $laptop) {

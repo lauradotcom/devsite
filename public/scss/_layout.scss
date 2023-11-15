@@ -156,8 +156,8 @@ header {
 #portfolio-web {
   section {
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 4(1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat (5, 1fr);
     article {
       height: 60vh;
       display: flex;
@@ -226,35 +226,58 @@ header {
 #portfolio-email {
   section {
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 4(1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
     article {
-      height: 60vh;
+      width: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
-      p {
-        font-weight: 400;
-        margin: 1.5rem 0;
+      justify-content: space-between;
+      padding: 1rem;
+      img {
+        height: auto;
+        width: 100%;
       }
-      ul {
-        list-style-type: none;
-        display: flex;
-        gap: 1rem;
-      }
-      ul.technologies {
-        font-weight: 400;
-        margin: 1rem 0;
-        padding-inline: 0;
-        justify-self: flex-end;
-      }
-      ul.icons {
-        margin: 1rem 0;
-        padding-inline: 0;
-        span {
-          font-size: 1.5rem;
+      div {
+        background-color: $navy;
+        color: $offWhite;
+        padding: 1rem;
+        width: 100%;
+        position: relative;
+        bottom: 0px;
+        p {
+          font-weight: 400;
+          margin: 1.5rem 0;
+        }
+        ul {
+          list-style-type: none;
+          display: flex;
+          gap: 1rem;
+        }
+        ul.technologies {
+          font-weight: 400;
+          margin: 1rem 0;
+          padding-inline: 0;
+          justify-self: flex-end;
+        }
+        ul.icons {
+          margin: 1rem 0;
+          padding-inline: 0;
+          span {
+            font-size: 1.5rem;
+          }
         }
       }
+    }
+  }
+}
+
+// Tablet
+@media screen and (min-width: $tablet) {
+  #portfolio-email {
+    section {
+      grid-template-columns: 1fr 1fr;
+      grid-row-gap: 5rem;
     }
   }
 }
@@ -264,7 +287,7 @@ header {
 @media screen and (min-width: $laptop) {
   #portfolio-web {
     section {
-      grid-template-columns: 2(1fr);
+      grid-template-columns: 1fr;
       grid-row-gap: 5rem;
       article {
         width: 50%;
@@ -309,10 +332,9 @@ header {
 
   #portfolio-email {
     section {
-      grid-template-columns: 3(1fr);
+      grid-template-columns: repeat(3, 1fr);
       grid-row-gap: 5rem;
       article {
-        width: 50%;
         div {
           background-color: $navy;
           color: $offWhite;
@@ -320,33 +342,6 @@ header {
           width: 100%;
           min-height: 75%;
           position: relative;
-        }
-        &:nth-child(even) {
-          background-color: $darkTeal;
-          justify-self: flex-end;
-          div {
-            right: 85%;
-          }      
-          a {
-            color: $offWhite;
-                &:hover {
-                  color:$lightTeal;
-                }
-          }
-        }
-        &:nth-child(odd) {
-          background-color: $lightTeal;
-          color: $offWhite;
-          justify-self: flex-start;
-          div {
-            left: 85%;
-          }
-          a {
-            color: $offWhite;
-                &:hover {
-                  color:$lightTeal;
-                }
-          }
         }
       }
     }
@@ -379,20 +374,12 @@ header {
 
   #portfolio-email {
     section {
+      grid-template-columns: repeat(4, 1fr);
+      grid-row-gap: 5rem;
       article {
         div {
           width: 70%;
           min-height: 80%;
-        }
-        &:nth-child(even) {
-          div {
-            right: 45%;
-          }
-        }
-        &:nth-child(odd) {
-          div {
-            left: 85%;
-          }
         }
       }
     }
@@ -431,12 +418,13 @@ header {
   background-size: cover;
   background-position: top;
 }
-
+/*
 #email-1 {
   background-image: url('../images/Oct2023NLMobile.jpg');
   background-size: cover;
   background-position: top;
 }
+*/
 
 // Desktop
 

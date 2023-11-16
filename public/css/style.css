@@ -387,24 +387,27 @@ header nav ul {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 1fr);
+  gap: 1rem;
 }
 #portfolio-email section article {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 1rem;
+  position: relative;
+  padding: 0 0;
 }
 #portfolio-email section article img {
+  display: block;
   height: auto;
   width: 100%;
+  align-self: stretch;
 }
 #portfolio-email section article div {
   background-color: #0B232E;
   color: #FBFCF5;
   padding: 1rem;
   width: 100%;
-  position: relative;
+  height: auto;
+  opacity: 0.95;
+  position: absolute;
   bottom: 0px;
 }
 #portfolio-email section article div p {
@@ -433,7 +436,7 @@ header nav ul {
 @media screen and (min-width: 768px) {
   #portfolio-email section {
     grid-template-columns: 1fr 1fr;
-    grid-row-gap: 5rem;
+    gap: 1rem;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -482,15 +485,15 @@ header nav ul {
 
   #portfolio-email section {
     grid-template-columns: repeat(3, 1fr);
-    grid-row-gap: 5rem;
   }
   #portfolio-email section article div {
     background-color: #0B232E;
     color: #FBFCF5;
     padding: 1rem;
-    width: 100%;
-    min-height: 75%;
-    position: relative;
+    opacity: 0;
+  }
+  #portfolio-email section article div:hover {
+    opacity: 0.95;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -507,11 +510,6 @@ header nav ul {
 
   #portfolio-email section {
     grid-template-columns: repeat(4, 1fr);
-    grid-row-gap: 5rem;
-  }
-  #portfolio-email section article div {
-    width: 70%;
-    min-height: 80%;
   }
 }
 /* ======== Background images for porfolio items ======== */
@@ -545,13 +543,6 @@ header nav ul {
   background-position: top;
 }
 
-/*
-#email-1 {
-  background-image: url('../images/Oct2023NLMobile.jpg');
-  background-size: cover;
-  background-position: top;
-}
-*/
 @media screen and (min-width: 1024px) {
   #ecommstore {
     background-image: linear-gradient(rgba(11, 124, 116, 0.9), rgba(11, 124, 116, 0.9)), url("../images/ecommStore-Desktop.png");

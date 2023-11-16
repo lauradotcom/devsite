@@ -80,8 +80,13 @@ header {
   }
 }
 
+@media screen and (max-width: $tablet) {
+  .bio-photo {
+    display: none;
+  }
+}
+
 .bio-photo {
-  //width: 40%;
   img {
     width: 250px;
     height: 250px;
@@ -99,11 +104,18 @@ header {
   align-items: center;
 }
 
+#about .blurb {
+  h2 {
+    color: $darkTeal;
+  }
+}
+
 @media screen and (min-width: $laptop) {
   #about .blurb {
     width: 50%;
     h2 {
       align-self: flex-start;
+      color: $navy;
     }
   }
 }

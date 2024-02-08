@@ -411,14 +411,16 @@ header nav ul {
   align-self: stretch;
 }
 #portfolio-email section article div {
+  display: grid;
   background-color: #0B232E;
   color: #FBFCF5;
   padding: 1rem;
   width: 100%;
-  height: auto;
+  height: 100%;
   opacity: 0.95;
   position: absolute;
-  bottom: 0px;
+  top: 0px;
+  align-content: center;
 }
 #portfolio-email section article div p {
   font-weight: 400;
@@ -427,13 +429,13 @@ header nav ul {
 #portfolio-email section article div ul {
   list-style-type: none;
   display: flex;
+  justify-items: flex-start;
   gap: 1rem;
 }
 #portfolio-email section article div ul.technologies {
   font-weight: 400;
   margin: 1rem 0;
   padding-inline: 0;
-  justify-self: flex-end;
 }
 #portfolio-email section article div ul.icons {
   margin: 1rem 0;

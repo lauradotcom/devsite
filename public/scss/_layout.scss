@@ -252,14 +252,16 @@ header {
         align-self: stretch;
       }
       div {
+        display: grid;
         background-color: $navy;
         color: $offWhite;
         padding: 1rem;
         width: 100%;
-        height: auto;
+        height: 100%;
         opacity: 0.95;
         position: absolute;
-        bottom: 0px;
+        top: 0px;
+        align-content: center;
         p {
           font-weight: 400;
           margin: 1.5rem 0;
@@ -267,13 +269,13 @@ header {
         ul {
           list-style-type: none;
           display: flex;
+          justify-items: flex-start;
           gap: 1rem;
         }
         ul.technologies {
           font-weight: 400;
           margin: 1rem 0;
           padding-inline: 0;
-          justify-self: flex-end;
         }
         ul.icons {
           margin: 1rem 0;

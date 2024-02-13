@@ -14,12 +14,15 @@
     <title>Laur Hawkins | Front-End Web Developer Portfolio</title>
     <meta name="description" content="The professional web developer site of Laura Hawkins.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/reset.css" type="text/css">
-    <link rel="stylesheet" href="./css/style.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/355045fd72.js" crossorigin="anonymous"></script>
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
+    <link rel="stylesheet" href="./css/reset.css" type="text/css">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -48,81 +51,264 @@
       </section>
       <section id="portfolio">
         <h2>Portfolio</h2>
-        <article id="ecommstore">
-          <div>
-            <h3>ecommStore</h3>
-            <p>Designed and built a responsive, mobile-first UI, including animations, for a collaborative Ecommerce store project that I completed with three other developers as part of a beta program facilitated by the <a href="https://www.codecademy.com/" target="_blank">Codecademy</a> engineering team.</p>
-            <ul class="technologies">
-              <li>React</li>
-              <li>Gatsby</li>
-              <li>Redux Toolkit</li>
-              <li>CSS Modules</li>
-            </ul>
-            <ul class="icons">
-              <li><a target="_blank" href="https://codecademyecommstore.netlify.app/"><span title="View Live Project" class="fas fa-external-link-alt"></span></a></li>
-              <li><a target="_blank" href="https://github.com/lauradotcom/codecademy-collab-ecommerce"><span title="View on GitHub" class="fab fa-github"></span></a></li>
-            </ul>
-          </div>
-        </article>
-        <article id="stepup">
-          <div>
-            <h3>StepUp: Protect Trans Kids</h3>
-            <p>Designed and built new website on a tight deadline for a civil rights nonprofit, after original website was taken down by its developer, making its CMS inaccessible. Created hierarchy with calls to action and modified color palette to make WCAG-compliant.</p>
-            <ul class="technologies">
-              <li>Squarespace</li>
-              <li>HTML</li>
-              <li>Custom CSS</li>
-            </ul>
-            <ul class="icons">
-              <li><a target="_blank" href="https://transformationsproject.org"><span title="View Live Project" class="fas fa-external-link-alt"></span></a></li>
-            </ul>
-          </div>
-        </article>
-        <article id="spacestagram">
-          <div>
-            <h3>Spacestagram</h3>
-            <p>This Instagram clone populates a feed with five random images from NASA’s Photo of the Day API. It features a functioning, animated “like” button and Instagram-style date formatting.</p>
-            <ul class="technologies">
-              <li>React</li>
-              <li>HTML</li>
-              <li>CSS</li>
-            </ul>
-            <ul class="icons">
-              <li><a target="_blank" href="https://hellospacestagram.netlify.app"><span title="View Live Project" class="fas fa-external-link-alt"></span></a></li>
-              <li><a target="_blank" href="https://github.com/lauradotcom/spacestagram"><span title="View on GitHub" class="fab fa-github"></span></a></li>
-            </ul>
-          </div>
-        </article>
-        <article id="songcrush">
-            <div>
-            <h3>SongCrush</h3>
-            <p>Using <a href="https://spotify.com" target="_blank">Spotify</a> login authorization, this single-page app allows users to create and save playlists to a Spotify account.</p>
-            <ul class="technologies">
-              <li>React</li>
-              <li>HTML</li>
-              <li>CSS</li>
-            </ul>
-            <ul class="icons">
-              <li><a target="_blank" href="https://lauradotcom.github.io/songcrush"><span title="View Live Project" class="fas fa-external-link-alt"></span></a></li>
-              <li><a target="_blank" href="https://github.com/lauradotcom/songcrush"><span title="View on GitHub" class="fab fa-github"></span></a></li>
-            </ul>
-          </div>
-        </article>
-        <article id="prssa">
-          <div>
-            <h3>PRSSA</h3>
-            <p>I migrated this website from WordPress to Sitefinity, implementing provided CSS classes and JavaScript widgets and creating new CSS styles as needed.</p>
-            <ul class="technologies">
-              <li>HTML</li>
-              <li>CSS</li>
-            </ul>
-            <ul class="icons">
-              <li><a target="_blank" href="https://www.prsa.org/prssa/"><span title="View Live Project" class="fas fa-external-link-alt"></span></a></li>
-              <!--li><span title="View on GitHub" class="fab fa-github"></span></li-->
-            </ul>
-          </div>
-        </article>
+
+        <!-- Tab Navigation -->
+        <ul class="nav nav-tabs nav-justified mb-3" id="portfolio-tabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <h3>
+              <a
+            class="nav-link active"
+            id="ex1-tab-1"
+            data-mdb-toggle="tab"
+            href="#portfolio-web"
+            role="tab"
+            aria-controls="portfolio-web"
+            aria-selected="true"
+            >
+                <span class="fas fa-globe fa-fw me-2"></span>Web
+              </a>
+            </h3>
+          </li>
+          <li class="nav-item" role="presentation">
+            <h3>
+              <a
+                class="nav-link"
+                id="ex1-tab-2"
+                data-mdb-toggle="tab"
+                href="#portfolio-email"
+                role="tab"
+                aria-controls="portfolio-email"
+                aria-selected="false"
+                >
+                <span class="far fa-envelope fa-fw me-2"></span>Email
+              </a>
+            </h3>
+          </li>
+        </ul>
+        <!-- End Tab Navigation -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="portfolio">
+
+          <!-- Web Portfolio -->
+          <div
+            class="tab-pane fade show active"
+            id="portfolio-web"
+            role="tabpanel"
+            aria-labelledby="portfolio-web"
+          >
+          <section>
+            <article id="ecommstore">
+              <div>
+                <h4>ecommStore</h4>
+                <p>Designed and built a responsive, mobile-first UI, including animations, for a collaborative Ecommerce store project that I completed with three other developers as part of a beta program facilitated by the <a href="https://www.codecademy.com/" target="_blank">Codecademy</a> engineering team.</p>
+                <ul class="technologies">
+                  <li>React</li>
+                  <li>Gatsby</li>
+                  <li>Redux Toolkit</li>
+                  <li>CSS Modules</li>
+                </ul>
+                <ul class="icons">
+                  <li><a target="_blank" href="https://codecademyecommstore.netlify.app/"><span title="View Live Project" class="fas fa-external-link-alt"></span></a></li>
+                  <li><a target="_blank" href="https://github.com/lauradotcom/codecademy-collab-ecommerce"><span title="View on GitHub" class="fab fa-github"></span></a></li>
+                </ul>
+              </div>
+            </article>
+            <article id="stepup">
+              <div>
+                <h4>StepUp: Protect Trans Kids</h4>
+                <p>Designed and built new website on a tight deadline for a civil rights nonprofit, after original website was taken down by its developer, making its CMS inaccessible. Created hierarchy with calls to action and modified color palette to make WCAG-compliant.</p>
+                <ul class="technologies">
+                  <li>Squarespace</li>
+                  <li>HTML</li>
+                  <li>Custom CSS</li>
+                </ul>
+                <ul class="icons">
+                  <li><a target="_blank" href="https://transformationsproject.org"><span title="View Live Project" class="fas fa-external-link-alt"></span></a></li>
+                </ul>
+              </div>
+            </article>
+            <article id="spacestagram">
+              <div>
+                <h4>Spacestagram</h4>
+                <p>This Instagram clone populates a feed with five random images from NASA’s Photo of the Day API. It features a functioning, animated “like” button and Instagram-style date formatting.</p>
+                <ul class="technologies">
+                  <li>React</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+                <ul class="icons">
+                  <li><a target="_blank" href="https://hellospacestagram.netlify.app"><span title="View Live Project" class="fas fa-external-link-alt"></span></a></li>
+                  <li><a target="_blank" href="https://github.com/lauradotcom/spacestagram"><span title="View on GitHub" class="fab fa-github"></span></a></li>
+                </ul>
+              </div>
+            </article>
+            <article id="songcrush">
+                <div>
+                <h4>SongCrush</h4>
+                <p>Using <a href="https://spotify.com" target="_blank">Spotify</a> login authorization, this single-page app allows users to create and save playlists to a Spotify account.</p>
+                <ul class="technologies">
+                  <li>React</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+                <ul class="icons">
+                  <li><a target="_blank" href="https://lauradotcom.github.io/songcrush"><span title="View Live Project" class="fas fa-external-link-alt"></span></a></li>
+                  <li><a target="_blank" href="https://github.com/lauradotcom/songcrush"><span title="View on GitHub" class="fab fa-github"></span></a></li>
+                </ul>
+              </div>
+            </article>
+            <article id="prssa">
+              <div>
+                <h4>PRSSA</h4>
+                <p>I migrated this website from WordPress to Sitefinity, implementing provided CSS classes and JavaScript widgets and creating new CSS styles as needed.</p>
+                <ul class="technologies">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+                <ul class="icons">
+                  <li><a target="_blank" href="https://www.prsa.org/prssa/"><span title="View Live Project" class="fas fa-external-link-alt"></span></a></li>
+                  <!--li><span title="View on GitHub" class="fab fa-github"></span></li-->
+                </ul>
+              </div>
+            </article>
+          </section>
+        </div>
+      
+        <!-- Email Portfolio -->
+        <div
+        class="tab-pane fade"
+        id="portfolio-email"
+        role="tabpanel"
+        aria-labelledby="portfolio-email"
+        >
+          <section>
+            <article>
+              <img src="./images/AsurisJan2024NLDesktop.jpg" />
+              <div>
+                  <h4>Asuris Northwest Health</h4>
+                  <p>Campaign promoting use of preventive care benefits. Dynamic content segmented by age, gender, and whether member has a PCP.</p>
+                  <ul class="technologies">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>AMPscript</li>
+                  </ul>
+                  <ul class="icons">
+                    <li><a target="_blank" href="https://parcel.io/e/662bba34-f0fc-425b-af65-b878c3b0d4c5?"><span title="View code on Parcel" class="fas fa-external-link-alt"></span></a></li>
+                  </ul>
+                </div>
+              </article>
+            <article>
+              <img src="./images/MTMRefresh2024Desktop.jpg" />
+              <div>
+                  <h4>Regence</h4>
+                  <p>Triggered campaign informing Medicare members of the benefits of Regence's Medication Therapy Management program.</p>
+                  <ul class="technologies">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>AMPscript</li>
+                  </ul>
+                  <ul class="icons">
+                    <li><a target="_blank" href="https://parcel.io/e/428fb693-0450-4226-ae30-319c74515757?"><span title="View code on Parcel" class="fas fa-external-link-alt"></span></a></li>
+                  </ul>
+                </div>
+              </article>
+              <article>
+                <img src="./images/BridgeSpanAdHocAEDDec2023Desktop.jpg" />
+                <div>
+                    <h4>BridgeSpan Health</h4>
+                    <p>Ad hoc campaign informing members of alternatives to avoid the emergency room or urgent care during the holidays.</p>
+                    <ul class="technologies">
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>AMPscript</li>
+                    </ul>
+                    <ul class="icons">
+                      <li><a target="_blank" href="https://parcel.io/e/ae95c6b4-318c-439d-8181-00e47072c1f1?"><span title="View code on Parcel" class="fas fa-external-link-alt"></span></a></li>
+                    </ul>
+                  </div>
+                </article>
+                <article>
+                  <img src="./images/RegProducerNewsDec2023Desktop.jpg" />
+                  <div>
+                      <h4>Regence</h4>
+                      <p>Quarterly newsletter for producer audience. Dynamic content segmented by state in which producer sells Regence insurance.</p>
+                      <ul class="technologies">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>AMPscript</li>
+                      </ul>
+                      <ul class="icons">
+                        <li><a target="_blank" href="https://parcel.io/e/fc3b174d-9a5d-4b77-ae11-f2175aeb7db6?"><span title="View code on Parcel" class="fas fa-external-link-alt"></span></a></li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article>
+                    <img src="./images/Oct2023NLDesktop.jpg" />
+                    <div>
+                      <h4>Regence</h4>
+                      <p>October awareness campaign informing members about covered vaccinations. First name personalization.</p>
+                      <ul class="technologies">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>AMPscript</li>
+                      </ul>
+                      <ul class="icons">
+                        <li><a target="_blank" href="https://parcel.io/e/5ca8aa41-c9e6-4b0d-b3d5-b0b5a243b0b2?"><span title="View code on Parcel" class="fas fa-external-link-alt"></span></a></li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article>
+                    <img src="./images/RegProducerNewsSept2023.jpg" />
+                    <div>
+                        <h4>Regence</h4>
+                        <p>Quarterly newsletter for producer audience. This edition included a responsive data table containing key dates for employers groups.</p>
+                        <ul class="technologies">
+                          <li>HTML</li>
+                          <li>CSS</li>
+                          <li>AMPscript</li>
+                        </ul>
+                        <ul class="icons">
+                          <li><a target="_blank" href="https://parcel.io/e/c98575b0-b84e-4bad-a44c-4142825c1533?"><span title="View code on Parcel" class="fas fa-external-link-alt"></span></a></li>
+                        </ul>
+                      </div>
+                    </article>
+                    <article>
+                      <img src="./images/Aug2023AdhocDispatchStoryDesktop.jpg" />
+                      <div>
+                        <h4>Regence</h4>
+                        <p>Co-branded ad hoc campaign promoting vendor DispatchHealth as an alternative to visiting the emergency room.</p>
+                        <ul class="technologies">
+                          <li>HTML</li>
+                          <li>CSS</li>
+                          <li>AMPscript</li>
+                        </ul>
+                        <ul class="icons">
+                          <li><a target="_blank" href="https://parcel.io/e/5ca8aa41-c9e6-4b0d-b3d5-b0b5a243b0b2?"><span title="View code on Parcel" class="fas fa-external-link-alt"></span></a></li>
+                        </ul>
+                      </div>
+                    </article>
+                    <article>
+                      <img src="./images/June2023NLDesktop.jpg" />
+                      <div>
+                          <h4>Regence</h4>
+                          <p>Midyear campaign reminding members to use their annual wellness visit benefit. Dynamic content segmented by age, gender, and whether member has dependents.</p>
+                          <ul class="technologies">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>AMPscript</li>
+                          </ul>
+                          <ul class="icons">
+                            <li><a target="_blank" href="https://parcel.io/e/c98575b0-b84e-4bad-a44c-4142825c1533?"><span title="View code on Parcel" class="fas fa-external-link-alt"></span></a></li>
+                          </ul>
+                        </div>
+                      </article>
+                    </section>
+                  </div>
+                </div>
       </section>
+
+      <!-- Contact Form -->
       <section id="contact">
         <article class="blurb">
           <h2>Get In Touch</h2>
@@ -149,7 +335,7 @@
     </main>
     <footer>
       <ul class="icons">
-        <li><a href="https://linkedin.com/in/laura-g-hawkins"><span title="LinkedIn" class="fab fa-linkedin-in"></span></a></li>
+        <li><a href="https://linkedin.com/in/laur-hawkins"><span title="LinkedIn" class="fab fa-linkedin-in"></span></a></li>
         <li><a href="https://github.com/lauradotcom"><span title="GitHub" class="fab fa-github"></span></a></li>
       </ul>
       <p>&copy; Laur Hawkins <script>document.write(new Date().getFullYear())</script></p>

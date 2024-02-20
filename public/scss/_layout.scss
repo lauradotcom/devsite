@@ -74,6 +74,17 @@ header {
   justify-content: center;
 }
 
+#about .blurb {
+  align-items: flex-start;
+  h2 {
+    align-self: center;
+  }
+}
+
+.blurb p {
+  margin-bottom: 13px;
+}
+
 @media screen and (min-width: $laptop) {
   #about {
   flex-direction: row;
@@ -113,6 +124,7 @@ header {
 @media screen and (min-width: $laptop) {
   #about .blurb {
     width: 50%;
+    align-items: flex-start;
     h2 {
       align-self: flex-start;
       color: $navy;

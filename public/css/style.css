@@ -1,5 +1,19 @@
 /* ========= Variables ========== */
-html {
+:root {
+  font-family: "Lato", Helvetica, sans-serif;
+}
+
+::-moz-selection {
+  color: #0B232E;
+  background: #F0CA68;
+}
+
+::selection {
+  color: #0B232E;
+  background: #F0CA68;
+}
+
+html, body {
   font-size: 16px;
   font-family: "Lato", Helvetica, sans-serif;
   color: #0B232E;
@@ -8,11 +22,6 @@ html {
   scroll-behavior: smooth;
 }
 
-@media screen and (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-}
 h1 {
   font-size: 1.75rem;
   font-family: "Arvo", serif;
@@ -28,8 +37,17 @@ h2 {
   text-align: center;
 }
 
-h3 {
+h3, h3 > a {
   font-size: 1.25rem;
+  font-family: "Lato", Helvetica, sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h4 {
+  font-size: 1.1rem;
   font-family: "Lato", Helvetica, sans-serif;
   font-weight: 700;
   margin-top: 0.5rem;
@@ -39,6 +57,14 @@ h3 {
 article {
   line-height: 1.25rem;
   padding: 2rem;
+}
+
+a {
+  color: #0B7C74;
+  text-decoration: underline;
+}
+a:visited {
+  color: #0B7C74;
 }
 
 @media screen and (min-width: 1024px) {
@@ -53,6 +79,11 @@ article {
   h2 {
     font-size: 1.75rem;
     margin-bottom: 1.085rem;
+  }
+}
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 }
 /* ======== Buttons ======== */
@@ -123,11 +154,21 @@ form div#status-message {
   color: #23CABE;
 }
 
+.fa-fw.me-2 {
+  color: inherit;
+}
+.fa-fw.me-2:hover {
+  color: inherit;
+}
+.fa-fw.me-2:active {
+  color: inherit;
+}
+
 @media screen and (max-width: 1023px) {
-  #portfolio article:nth-child(odd) .fab, #portfolio article:nth-child(odd) .fas, #portfolio article:nth-child(odd) .far {
+  #portfolio-web article:nth-child(even) .fab, #portfolio-web article:nth-child(even) .fas, #portfolio-web article:nth-child(even) .far {
     color: #0B232E;
   }
-  #portfolio article:nth-child(odd) .fab:hover, #portfolio article:nth-child(odd) .fas:hover, #portfolio article:nth-child(odd) .far:hover {
+  #portfolio-web article:nth-child(even) .fab:hover, #portfolio-web article:nth-child(even) .fas:hover, #portfolio-web article:nth-child(even) .far:hover {
     color: #0B7C74;
   }
 }
@@ -203,9 +244,25 @@ header nav ul {
   justify-content: center;
 }
 
+#about .blurb {
+  align-items: flex-start;
+}
+#about .blurb h2 {
+  align-self: center;
+}
+
+.blurb p {
+  margin-bottom: 13px;
+}
+
 @media screen and (min-width: 1024px) {
   #about {
     flex-direction: row;
+  }
+}
+@media screen and (max-width: 768px) {
+  .bio-photo {
+    display: none;
   }
 }
 .bio-photo img {
@@ -224,102 +281,259 @@ header nav ul {
   align-items: center;
 }
 
-@media screen and (min-width: 1024px) {
-  #about .blurb {
-    width: 50%;
-  }
-  #about .blurb h2 {
-    align-self: flex-start;
-  }
-}
-/* ======== Portfolio Section ======== */
-#portfolio {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 4 1fr;
-}
-#portfolio article {
-  height: 50vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-#portfolio article p {
-  font-weight: 500;
-  margin: 1.5rem 0;
-}
-#portfolio article ul {
-  list-style-type: none;
-  display: flex;
-  gap: 1rem;
-}
-#portfolio article ul.technologies {
-  font-weight: 400;
-  margin: 1rem 0;
-  justify-self: flex-end;
-}
-#portfolio article ul.icons {
-  margin: 1rem 0;
-}
-#portfolio article ul.icons span {
-  font-size: 1.5rem;
-}
-#portfolio article:nth-child(even) {
-  background-color: #0B7C74;
-  color: #FBFCF5;
-  animation: easeIn 2s;
-}
-#portfolio article:nth-child(odd) {
-  background-color: #F0CA68;
-}
-#portfolio article:nth-child(odd) ul.icons {
-  color: #0B232E;
-}
-#portfolio article:nth-child(odd) ul.icons li:hover {
+#about .blurb h2 {
   color: #0B7C74;
 }
 
 @media screen and (min-width: 1024px) {
-  #portfolio {
-    grid-template-columns: 2 1fr;
+  #about .blurb {
+    width: 50%;
+    align-items: flex-start;
+  }
+  #about .blurb h2 {
+    align-self: flex-start;
+    color: #0B232E;
+  }
+}
+/* ======== Tabbed Navigation ======== */
+.nav-tabs .nav-link {
+  font-family: "Lato", Helvetica, sans-serif;
+  font-size: 1.25rem !important;
+  color: #0B232E;
+  background-color: transparent !important;
+  text-transform: none;
+}
+.nav-tabs .nav-link:hover {
+  color: #0B7C74;
+  background-color: transparent;
+}
+
+.nav-link.active, nav-link.active > span {
+  color: #0B7C74 !important;
+  border-color: #0B7C74 !important;
+  background-color: transparent;
+}
+
+.nav-item {
+  font-family: "Lato", Helvetica, sans-serif;
+  color: #0B7C74;
+}
+
+#ex1-content {
+  width: 100% !important;
+}
+
+.tab-content {
+  width: 100% !important;
+}
+
+.tab-pane {
+  width: 100% !important;
+  font-family: "Lato", Helvetica, sans-serif;
+}
+
+/* ======== Portfolio Section ======== */
+#portfolio {
+  width: 100%;
+}
+
+#portfolio-web section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat 5, 1fr;
+}
+#portfolio-web section article {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#portfolio-web section article p {
+  font-weight: 400;
+  margin: 1.5rem 0;
+}
+#portfolio-web section article ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+#portfolio-web section article ul.technologies {
+  font-weight: 400;
+  margin: 1rem 0;
+  padding-inline: 0;
+  justify-self: flex-end;
+}
+#portfolio-web section article ul.icons {
+  margin: 1rem 0;
+  padding-inline: 0;
+}
+#portfolio-web section article ul.icons span {
+  font-size: 1.5rem;
+}
+#portfolio-web section article:nth-child(odd) {
+  background-color: #0B7C74;
+  color: #FBFCF5;
+  animation: easeIn 2s;
+  color: #FBFCF5;
+}
+#portfolio-web section article:nth-child(odd) a {
+  color: #FBFCF5;
+}
+#portfolio-web section article:nth-child(odd) a:hover {
+  color: #23CABE;
+}
+#portfolio-web section article:nth-child(odd) ul.icons {
+  color: #FBFCF5;
+}
+#portfolio-web section article:nth-child(odd) ul.icons li:hover {
+  color: #23CABE;
+}
+#portfolio-web section article:nth-child(even) {
+  background-color: #F0CA68;
+  color: #0B232E;
+}
+#portfolio-web section article:nth-child(even) a {
+  color: #0B232E;
+}
+#portfolio-web section article:nth-child(even) a:hover {
+  color: #0B7C74;
+}
+#portfolio-web section article:nth-child(even) ul.icons {
+  color: #0B232E;
+}
+#portfolio-web section article:nth-child(even) ul.icons li:hover {
+  color: #0B7C74;
+}
+
+#portfolio-email section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 1rem;
+}
+#portfolio-email section article {
+  width: 100%;
+  position: relative;
+  padding: 0 0;
+}
+#portfolio-email section article img {
+  display: block;
+  height: auto;
+  width: 100%;
+  align-self: stretch;
+}
+#portfolio-email section article div {
+  display: grid;
+  background-color: #0B232E;
+  color: #FBFCF5;
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  opacity: 0.95;
+  position: absolute;
+  top: 0px;
+  align-content: center;
+}
+#portfolio-email section article div p {
+  font-weight: 400;
+  margin: 1.5rem 0;
+}
+#portfolio-email section article div ul {
+  list-style-type: none;
+  display: flex;
+  justify-items: flex-start;
+  gap: 1rem;
+}
+#portfolio-email section article div ul.technologies {
+  font-weight: 400;
+  margin: 1rem 0;
+  padding-inline: 0;
+}
+#portfolio-email section article div ul.icons {
+  margin: 1rem 0;
+  padding-inline: 0;
+}
+#portfolio-email section article div ul.icons span {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  #portfolio-email section {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #portfolio-web section {
+    grid-template-columns: 1fr;
     grid-row-gap: 5rem;
   }
-  #portfolio article {
+  #portfolio-web section article {
     width: 50%;
   }
-  #portfolio article div {
+  #portfolio-web section article div {
     background-color: #0B232E;
+    color: #FBFCF5;
     padding: 1rem;
     width: 100%;
     min-height: 75%;
     position: relative;
   }
-  #portfolio article:nth-child(even) {
+  #portfolio-web section article:nth-child(even) {
     background-color: #0B7C74;
     justify-self: flex-end;
   }
-  #portfolio article:nth-child(even) div {
+  #portfolio-web section article:nth-child(even) div {
     right: 85%;
   }
-  #portfolio article:nth-child(odd) {
+  #portfolio-web section article:nth-child(even) a {
+    color: #FBFCF5;
+  }
+  #portfolio-web section article:nth-child(even) a:hover {
+    color: #23CABE;
+  }
+  #portfolio-web section article:nth-child(odd) {
     background-color: #23CABE;
     color: #FBFCF5;
     justify-self: flex-start;
   }
-  #portfolio article:nth-child(odd) div {
+  #portfolio-web section article:nth-child(odd) div {
     left: 85%;
+  }
+  #portfolio-web section article:nth-child(odd) a {
+    color: #FBFCF5;
+  }
+  #portfolio-web section article:nth-child(odd) a:hover {
+    color: #23CABE;
+  }
+
+  #portfolio-email section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #portfolio-email section article div {
+    background-color: #0B232E;
+    color: #FBFCF5;
+    padding: 1rem;
+    opacity: 0;
+  }
+  #portfolio-email section article div:hover {
+    opacity: 0.95;
   }
 }
 @media screen and (min-width: 1440px) {
-  #portfolio article div {
+  #portfolio-web section article div {
     width: 70%;
     min-height: 80%;
   }
-  #portfolio article:nth-child(even) div {
+  #portfolio-web section article:nth-child(even) div {
     right: 45%;
   }
-  #portfolio article:nth-child(odd) div {
+  #portfolio-web section article:nth-child(odd) div {
     left: 85%;
+  }
+
+  #portfolio-email section {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 /* ======== Background images for porfolio items ======== */
